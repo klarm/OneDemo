@@ -10,7 +10,6 @@
 #import "YLWHomeViewController.h"
 #import "YLWSiteViewController.h"
 #import "YLWTopicViewController.h"
-#import "YLWWeeklyViewController.h"
 #import "YLWUserViewController.h"
 
 @interface YLWTabBarController ()
@@ -25,9 +24,6 @@
     
 
     [self addChildViewControllers];
-    
-    
-    
 }
 
 -(void)addChildViewControllers{
@@ -40,9 +36,6 @@
     
     YLWTopicViewController *topic = [[YLWTopicViewController alloc]init];
     [self addChildViewController:topic WithTitle:@"人员考勤" image:@"tab_topic"];
-    
-//    YLWWeeklyViewController *weekly = [[YLWWeeklyViewController alloc]init];
-//    [self addChildViewController:weekly WithTitle:@"周刊" image:@"tab_dis"];
     
     YLWUserViewController *user = [[YLWUserViewController alloc]init];
     [self addChildViewController:user WithTitle:@"设置" image:@"tab_user"];
