@@ -56,11 +56,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x63a8;&#x5e93;iOS/Class/Main/Controller/YLWBaseSTableViewController.m"
-            timestampString = "515147322.659672"
+            timestampString = "515147860.813099"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "-getViewData"
             landmarkType = "7">
          </BreakpointContent>
@@ -142,6 +142,22 @@
             startingLineNumber = "58"
             endingLineNumber = "58"
             landmarkName = "-setSiteItemModel:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x63a8;&#x5e93;iOS/Class/monitor/View/YLWSiteItemTableViewCell.m"
+            timestampString = "515148425.050938"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "-layoutSubviews"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

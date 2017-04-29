@@ -59,9 +59,22 @@
     self.house.text = siteItemModel.house;
     self.name.text = siteItemModel.name;
     self.timing.text = siteItemModel.timing;
-
 }
 
+- (void)layoutSubviews
+{
+    [self.time sizeToFit];
+    [self.time setX:self.iconImageView.right+10];
+    
+    [self.house sizeToFit];
+    [self.house setX:self.time.right+10];
+    
+    [self.name sizeToFit];
+    [self.name setX:self.house.right+10];
+    
+    [self.timing sizeToFit];
+    [self.timing setX:self.name.right+10];
+}
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

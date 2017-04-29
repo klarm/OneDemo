@@ -60,6 +60,7 @@
 		B603E2661EB4775A0050BC36 /* YLWNewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B603E2571EB4775A0050BC36 /* YLWNewsTableViewCell.xib */; };
 		B603E2671EB4775A0050BC36 /* YLWTitleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E2591EB4775A0050BC36 /* YLWTitleScrollView.m */; };
 		B603E26A1EB4811A0050BC36 /* employees.json in Resources */ = {isa = PBXBuildFile; fileRef = B603E2691EB4811A0050BC36 /* employees.json */; };
+		B603E26E1EB489C40050BC36 /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E26D1EB489C40050BC36 /* UIView+LayoutMethods.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -157,6 +158,8 @@
 		B603E2581EB4775A0050BC36 /* YLWTitleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWTitleScrollView.h; sourceTree = "<group>"; };
 		B603E2591EB4775A0050BC36 /* YLWTitleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWTitleScrollView.m; sourceTree = "<group>"; };
 		B603E2691EB4811A0050BC36 /* employees.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = employees.json; sourceTree = "<group>"; };
+		B603E26C1EB489C40050BC36 /* UIView+LayoutMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutMethods.h"; sourceTree = "<group>"; };
+		B603E26D1EB489C40050BC36 /* UIView+LayoutMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutMethods.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +287,7 @@
 		0489AE7F1C748A8800E2998C /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				B603E26B1EB489C40050BC36 /* Util */,
 				0489AE841C748A8800E2998C /* Main */,
 				B603E23B1EB4775A0050BC36 /* storehouse */,
 				B603E22C1EB476E70050BC36 /* monitor */,
@@ -545,6 +549,15 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		B603E26B1EB489C40050BC36 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B603E26C1EB489C40050BC36 /* UIView+LayoutMethods.h */,
+				B603E26D1EB489C40050BC36 /* UIView+LayoutMethods.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		D310E6AA13DB41176AEB2075 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -713,6 +726,7 @@
 				B603E2611EB4775A0050BC36 /* YLWContentTableViewController.m in Sources */,
 				B603E2621EB4775A0050BC36 /* YLWDetailTextModel.m in Sources */,
 				B603E25E1EB4775A0050BC36 /* YLWArticleModel.m in Sources */,
+				B603E26E1EB489C40050BC36 /* UIView+LayoutMethods.m in Sources */,
 				04DAE1FF1C820A0800F20AFF /* YLWBaseSTableViewController.m in Sources */,
 				B603E2631EB4775A0050BC36 /* YLWDetailTextViewController.m in Sources */,
 				B603E25D1EB4775A0050BC36 /* YLWTitleModel.m in Sources */,

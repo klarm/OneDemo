@@ -66,6 +66,8 @@
     
     [super viewDidLoad];
     
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
     [self setNav];
     
     [self getViewData];

@@ -25,6 +25,8 @@
 #import "YLWHttpTool.h"
 #import "YLWArticalTool.h"
 
+#import "UIView+LayoutMethods.h"
+
 
 #import <MJRefresh.h>
 #import <SVProgressHUD.h>
