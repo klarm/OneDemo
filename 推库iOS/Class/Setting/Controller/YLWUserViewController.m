@@ -14,7 +14,7 @@
 #import "YLWUserLoginController.h"
 #import "YLWUserInfoViewController.h"
 #import "YLWContentTableViewController.h"
-#import "StringDef.h"
+#import "myStringDef.h"
 
 @interface YLWUserViewController ()
 

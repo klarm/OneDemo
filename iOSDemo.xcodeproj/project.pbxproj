@@ -101,7 +101,7 @@
 		2FB67D531C8FBD30AD4E02DA /* Pods-推库iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-推库iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-推库iOS/Pods-推库iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		5ACF2309B4502C3231BFD5CB /* Pods-推库iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-推库iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-推库iOS/Pods-推库iOS.release.xcconfig"; sourceTree = "<group>"; };
 		89057CC06682018B56AEE676 /* libPods-推库iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-推库iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B603E2021EB45DA60050BC36 /* StringDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringDef.h; sourceTree = "<group>"; };
+		B603E2021EB45DA60050BC36 /* myStringDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myStringDef.h; sourceTree = "<group>"; };
 		B603E2051EB474510050BC36 /* YLWUserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWUserInfoViewController.h; sourceTree = "<group>"; };
 		B603E2061EB474510050BC36 /* YLWUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWUserInfoViewController.m; sourceTree = "<group>"; };
 		B603E2071EB474510050BC36 /* YLWUserLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWUserLoginController.h; sourceTree = "<group>"; };
@@ -365,7 +365,7 @@
 		B603E2011EB45D630050BC36 /* String */ = {
 			isa = PBXGroup;
 			children = (
-				B603E2021EB45DA60050BC36 /* StringDef.h */,
+				B603E2021EB45DA60050BC36 /* myStringDef.h */,
 			);
 			name = String;
 			sourceTree = "<group>";

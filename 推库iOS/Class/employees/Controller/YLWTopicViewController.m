@@ -10,6 +10,13 @@
 #import "YLWTopicItemModel.h"
 #import "YLWSiteItemTableViewCell.h"
 #import "YLWContentTableViewController.h"
+
+NSString * const strLogoImg = @"头像";
+NSString * const strTime = @"时间";
+NSString * const strHouse = @"库";
+NSString * const strName = @"姓名";
+NSString * const strTiming = @"考勤";
+
 @interface YLWTopicViewController ()
 @property (nonatomic,strong) UIView *headerView;
 @end
@@ -35,7 +42,7 @@
     
     [self.tableView reloadData];
     
-    //self.tableView.tableFooterView = self.footView;
+    self.tableView.tableHeaderView = self.headerView;
     
     
 //    __weak typeof(self) weakself = self;
@@ -55,6 +62,52 @@
     if (_headerView == nil) {
         _headerView = [[UIView alloc]init];
         _headerView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 44);
+        
+        UILabel* img = [[UILabel alloc]initWithFrame:CGRectZero];
+        img.backgroundColor = [UIColor grayColor];
+        img.text = strLogoImg;
+        [_headerView addSubview:img];
+        
+        UILabel* time = [[UILabel alloc]initWithFrame:CGRectZero];
+        //time.backgroundColor = [UIColor grayColor];
+        time.text = strTime;
+        [_headerView addSubview:time];
+        
+        UILabel* house = [[UILabel alloc]initWithFrame:CGRectZero];
+        //house.backgroundColor = [UIColor grayColor];
+        house.text = strHouse;
+        [_headerView addSubview:house];
+        
+        UILabel* name = [[UILabel alloc]initWithFrame:CGRectZero];
+        //name.backgroundColor = [UIColor grayColor];
+        name.text = strName;
+        [_headerView addSubview:name];
+        
+        UILabel* timing = [[UILabel alloc]initWithFrame:CGRectZero];
+        //timing.backgroundColor = [UIColor grayColor];
+        timing.text = strTiming;
+        [_headerView addSubview:timing];
+        
+        [img sizeToFit];
+        [img setX:10];
+        [img setCenterY:_headerView.height/2.0];
+        
+        [time sizeToFit];
+        [time setX:img.right+10];
+        [time setCenterY:_headerView.height/2.0];
+        
+        [house sizeToFit];
+        [house setX:time.right+10];
+        [house setCenterY:_headerView.height/2.0];
+        
+        [name sizeToFit];
+        [name setX:house.right+10];
+        [name setCenterY:_headerView.height/2.0];
+        
+        [timing sizeToFit];
+        [timing setX:name.right+10];
+        [timing setCenterY:_headerView.height/2.0];
+
     }
     return _headerView;
 }
