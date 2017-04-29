@@ -62,7 +62,7 @@
 		B603E26E1EB489C40050BC36 /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E26D1EB489C40050BC36 /* UIView+LayoutMethods.m */; };
 		B603E2701EB4B9EB0050BC36 /* stores.json in Resources */ = {isa = PBXBuildFile; fileRef = B603E26F1EB4B9EB0050BC36 /* stores.json */; };
 		B649973F1EB4E0BF0028FB26 /* storeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B649973C1EB4E0BF0028FB26 /* storeCell.m */; };
-		B64997401EB4E0BF0028FB26 /* storeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B649973E1EB4E0BF0028FB26 /* storeViewController.m */; };
+		B64997431EB4E8AD0028FB26 /* storeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64997421EB4E8AD0028FB26 /* storeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -164,8 +164,8 @@
 		B603E26F1EB4B9EB0050BC36 /* stores.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stores.json; sourceTree = "<group>"; };
 		B649973B1EB4E0BF0028FB26 /* storeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = storeCell.h; sourceTree = "<group>"; };
 		B649973C1EB4E0BF0028FB26 /* storeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = storeCell.m; sourceTree = "<group>"; };
-		B649973D1EB4E0BF0028FB26 /* storeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = storeViewController.h; sourceTree = "<group>"; };
-		B649973E1EB4E0BF0028FB26 /* storeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = storeViewController.m; sourceTree = "<group>"; };
+		B64997411EB4E8AD0028FB26 /* storeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = storeViewController.h; sourceTree = "<group>"; };
+		B64997421EB4E8AD0028FB26 /* storeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = storeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,10 +318,10 @@
 			children = (
 				0489AE6B1C74884700E2998C /* AppDelegate.h */,
 				0489AE6C1C74884700E2998C /* AppDelegate.m */,
+				B64997411EB4E8AD0028FB26 /* storeViewController.h */,
+				B64997421EB4E8AD0028FB26 /* storeViewController.m */,
 				B649973B1EB4E0BF0028FB26 /* storeCell.h */,
 				B649973C1EB4E0BF0028FB26 /* storeCell.m */,
-				B649973D1EB4E0BF0028FB26 /* storeViewController.h */,
-				B649973E1EB4E0BF0028FB26 /* storeViewController.m */,
 				0489AE991C748B0C00E2998C /* YLWTabBarController.h */,
 				0489AE9A1C748B0C00E2998C /* YLWTabBarController.m */,
 				0464C7521C7A05690087A477 /* YLWNavigationController.h */,
@@ -744,8 +744,8 @@
 				04716ED51C7D83E6007900AB /* UIBarButtonItem+CustomByButton.m in Sources */,
 				B603E21F1EB474510050BC36 /* YLWUserLoginModel.m in Sources */,
 				B603E25C1EB4775A0050BC36 /* YLWSearchViewController.m in Sources */,
-				B64997401EB4E0BF0028FB26 /* storeViewController.m in Sources */,
 				B603E2671EB4775A0050BC36 /* YLWTitleScrollView.m in Sources */,
+				B64997431EB4E8AD0028FB26 /* storeViewController.m in Sources */,
 				B603E22A1EB476920050BC36 /* YLWTopicViewController.m in Sources */,
 				0489AE6A1C74884700E2998C /* main.m in Sources */,
 				B649973F1EB4E0BF0028FB26 /* storeCell.m in Sources */,

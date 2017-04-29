@@ -9,7 +9,4 @@
 #import "YLWBaseSTableViewController.h"
 
 @interface YLWSiteViewController : YLWBaseSTableViewController
-
-
-
 @end

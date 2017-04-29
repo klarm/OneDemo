@@ -8,9 +8,6 @@ Custom collection view cell for image and its label.
 
 @import UIKit;
 
-@interface Cell : UICollectionViewCell
-
-@property (strong, nonatomic) IBOutlet UIImageView *image;
-@property (strong, nonatomic) IBOutlet UILabel *label;
+@interface storeCell : UICollectionViewCell
 
 @end

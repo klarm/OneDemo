@@ -1,13 +1,18 @@
-/*
-Copyright (C) 2015 Apple Inc. All Rights Reserved.
-See LICENSE.txt for this sample’s licensing information
+//
+//  ViewController.h
+//  代码创建UICollectionView
+//
+//  Created by 陈家庆 on 15-2-6.
+//  Copyright (c) 2015年 shikee_Chan. All rights reserved.
+//
 
-Abstract:
-The primary view controller for this app.
-*/
+#import <UIKit/UIKit.h>
 
-@import UIKit;
+@interface storeViewController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate>{
+    NSMutableArray *_cellArray;     //collectionView数据
+}
 
-@interface ViewController : UICollectionViewController
+@property (nonatomic, strong) UICollectionView *collectionView;
 
 @end
+

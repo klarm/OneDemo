@@ -16,31 +16,13 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    
-    
-
 }
 
 /**
  *  获取站点的数据
  */
 -(void)getViewData{
-
-//    __weak typeof(self) weakself = self;
-//    [YLWSiteItemModel siteItemModelWithURLstring:@"http://api.tuicool.com/api/sites/user_default.json" lastArray:(NSArray *)self.itemModelArray  successblock:^(NSArray *itemArray) {
-//       
-//        weakself.itemModelArray = itemArray;
-//        [weakself.tableView reloadData];
-//        weakself.tableView.tableFooterView = weakself.footView;
-//        
-//    }];
-//    
-//    
-//    
 }
-
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -48,8 +30,6 @@
 }
 
 #pragma mark - Table view data source
-
-
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
@@ -65,8 +45,6 @@
     NSLog(@"%@",urlstring);
     contentVc.urlstring = urlstring;
     [self.navigationController pushViewController:contentVc animated:YES];
-    
-
 }
 
 

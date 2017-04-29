@@ -8,7 +8,7 @@ Custom collection view cell for image and its label.
 
 #import "storeCell.h"
 
-@implementation Cell
+@implementation storeCell
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
 {

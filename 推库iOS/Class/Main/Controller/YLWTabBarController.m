@@ -11,6 +11,7 @@
 #import "YLWSiteViewController.h"
 #import "YLWTopicViewController.h"
 #import "YLWUserViewController.h"
+#import "storeViewController.h"
 
 @interface YLWTabBarController ()
 
@@ -28,7 +29,7 @@
 
 -(void)addChildViewControllers{
     
-    YLWSiteViewController *site = [[YLWSiteViewController alloc]init];
+    storeViewController *site = [[storeViewController alloc]init];
     [self addChildViewController:site WithTitle:@"主页" image:@"tab_site"];
 
     YLWHomeViewController *homeVc = [[YLWHomeViewController alloc]init];
