@@ -64,9 +64,6 @@
     
     cell.siteItemModel = model;
     
-    
-    
-    
     return cell;
 }
 
@@ -83,10 +80,6 @@
     NSString *urlstring = [NSString stringWithFormat:@"http://api.tuicool.com/api/topics/%@.json?lang=1&size=30&st=0",model.id];
     contentVc.urlstring = urlstring;
     [self.navigationController pushViewController:contentVc animated:YES];
-    
-    
-    
-    
 }
 
 

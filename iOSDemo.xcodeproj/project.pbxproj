@@ -12,9 +12,7 @@
 		044AB1BC1C88878D00AFB3B7 /* YLWDayNightTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AB1BB1C88878D00AFB3B7 /* YLWDayNightTool.m */; };
 		045CBA241C760D8900032F2F /* YLWNewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 045CBA231C760D8900032F2F /* YLWNewsTableViewCell.m */; };
 		045CBA261C760DFE00032F2F /* YLWNewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045CBA251C760DFE00032F2F /* YLWNewsTableViewCell.xib */; };
-		0464C7511C7A036D0087A477 /* YLWUserLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0464C7501C7A036D0087A477 /* YLWUserLoginController.m */; };
 		0464C7541C7A05690087A477 /* YLWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0464C7531C7A05690087A477 /* YLWNavigationController.m */; };
-		0464C7581C7A0F880087A477 /* YLWUserMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0464C7571C7A0F880087A477 /* YLWUserMessageModel.m */; };
 		046513DE1C81600300F6E458 /* article_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 046513DD1C81600300F6E458 /* article_image.png */; };
 		046FF7BA1C7574820056977C /* YLWTitleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046FF7B91C7574820056977C /* YLWTitleScrollView.m */; };
 		046FF7BC1C757CF00056977C /* titleArray.plist in Resources */ = {isa = PBXBuildFile; fileRef = 046FF7BB1C757CF00056977C /* titleArray.plist */; };
@@ -35,14 +33,8 @@
 		0489AE781C74884700E2998C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0489AE761C74884700E2998C /* LaunchScreen.storyboard */; };
 		0489AE9B1C748B0C00E2998C /* YLWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0489AE9A1C748B0C00E2998C /* YLWTabBarController.m */; };
 		0489AE9E1C748D5000E2998C /* YLWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0489AE9D1C748D5000E2998C /* YLWHomeViewController.m */; };
-		0489AEA71C748DBA00E2998C /* YLWUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0489AEA61C748DBA00E2998C /* YLWUserViewController.m */; };
 		0489AEAA1C748E5C00E2998C /* YLWWeeklyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0489AEA91C748E5C00E2998C /* YLWWeeklyViewController.m */; };
 		04918A3E1C84B4AF00B7BD93 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B82BDB1C817F3F00654527 /* libsqlite3.tbd */; };
-		049589A31C79D341008714B4 /* YLWUserItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 049589A21C79D341008714B4 /* YLWUserItemModel.m */; };
-		049589A61C79D810008714B4 /* YLWUserGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 049589A51C79D810008714B4 /* YLWUserGroupModel.m */; };
-		049589A91C79E5B9008714B4 /* YLWUserLoginCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 049589A81C79E5B9008714B4 /* YLWUserLoginCell.m */; };
-		049589AB1C79E788008714B4 /* YLWUserLoginCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049589AA1C79E788008714B4 /* YLWUserLoginCell.xib */; };
-		049589AE1C79F699008714B4 /* YLWUserLoginController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049589AD1C79F699008714B4 /* YLWUserLoginController.storyboard */; };
 		04B1A24D1C7CB81300064B62 /* YLWDetailTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B1A24C1C7CB81300064B62 /* YLWDetailTextViewController.m */; };
 		04B1A2501C7CB82F00064B62 /* YLWDetailTextModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B1A24F1C7CB82F00064B62 /* YLWDetailTextModel.m */; };
 		04B1A2521C7CBA8900064B62 /* article_detail.html in Resources */ = {isa = PBXBuildFile; fileRef = 04B1A2511C7CBA8900064B62 /* article_detail.html */; };
@@ -51,8 +43,6 @@
 		04B82BD61C817ED400654527 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B82BD51C817ED400654527 /* libstdc++.tbd */; };
 		04B82BD81C817EE500654527 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B82BD71C817EE500654527 /* JavaScriptCore.framework */; };
 		04B82BDA1C817F3100654527 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B82BD91C817F3100654527 /* ImageIO.framework */; };
-		04B9F7451C7A283F0081FF96 /* YLWUserLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B9F7441C7A283F0081FF96 /* YLWUserLoginModel.m */; };
-		04BB3E3C1C7B624900ED063B /* YLWUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BB3E3B1C7B624900ED063B /* YLWUserInfoViewController.m */; };
 		04BDB5791C8834B900296703 /* YLWSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BDB5781C8834B900296703 /* YLWSearchViewController.m */; };
 		04DAE1F91C8209D300F20AFF /* YLWTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAE1F81C8209D300F20AFF /* YLWTopicViewController.m */; };
 		04DAE1FC1C8209E800F20AFF /* YLWSiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAE1FB1C8209E800F20AFF /* YLWSiteViewController.m */; };
@@ -61,6 +51,16 @@
 		04DAE2051C820A4400F20AFF /* YLWSiteItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAE2041C820A4400F20AFF /* YLWSiteItemModel.m */; };
 		04DAE2081C820A5800F20AFF /* YLWTopicItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAE2071C820A5800F20AFF /* YLWTopicItemModel.m */; };
 		99EBBEC8622C1438D6D909F7 /* libPods-推库iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89057CC06682018B56AEE676 /* libPods-推库iOS.a */; };
+		B603E2191EB474510050BC36 /* YLWUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E2061EB474510050BC36 /* YLWUserInfoViewController.m */; };
+		B603E21A1EB474510050BC36 /* YLWUserLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E2081EB474510050BC36 /* YLWUserLoginController.m */; };
+		B603E21B1EB474510050BC36 /* YLWUserLoginController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B603E2091EB474510050BC36 /* YLWUserLoginController.storyboard */; };
+		B603E21C1EB474510050BC36 /* YLWUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E20B1EB474510050BC36 /* YLWUserViewController.m */; };
+		B603E21D1EB474510050BC36 /* YLWUserGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E20E1EB474510050BC36 /* YLWUserGroupModel.m */; };
+		B603E21E1EB474510050BC36 /* YLWUserItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E2101EB474510050BC36 /* YLWUserItemModel.m */; };
+		B603E21F1EB474510050BC36 /* YLWUserLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E2121EB474510050BC36 /* YLWUserLoginModel.m */; };
+		B603E2201EB474510050BC36 /* YLWUserMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E2141EB474510050BC36 /* YLWUserMessageModel.m */; };
+		B603E2211EB474510050BC36 /* YLWUserLoginCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E2171EB474510050BC36 /* YLWUserLoginCell.m */; };
+		B603E2221EB474510050BC36 /* YLWUserLoginCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B603E2181EB474510050BC36 /* YLWUserLoginCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,13 +72,9 @@
 		045CBA221C760D8900032F2F /* YLWNewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWNewsTableViewCell.h; sourceTree = "<group>"; };
 		045CBA231C760D8900032F2F /* YLWNewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWNewsTableViewCell.m; sourceTree = "<group>"; };
 		045CBA251C760DFE00032F2F /* YLWNewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLWNewsTableViewCell.xib; sourceTree = "<group>"; };
-		0464C74F1C7A036D0087A477 /* YLWUserLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWUserLoginController.h; sourceTree = "<group>"; };
-		0464C7501C7A036D0087A477 /* YLWUserLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWUserLoginController.m; sourceTree = "<group>"; };
 		0464C7521C7A05690087A477 /* YLWNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWNavigationController.h; sourceTree = "<group>"; };
 		0464C7531C7A05690087A477 /* YLWNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWNavigationController.m; sourceTree = "<group>"; };
 		0464C7551C7A063F0087A477 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		0464C7561C7A0F880087A477 /* YLWUserMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWUserMessageModel.h; sourceTree = "<group>"; };
-		0464C7571C7A0F880087A477 /* YLWUserMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWUserMessageModel.m; sourceTree = "<group>"; };
 		046513DD1C81600300F6E458 /* article_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = article_image.png; sourceTree = "<group>"; };
 		046FF7B81C7574820056977C /* YLWTitleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWTitleScrollView.h; sourceTree = "<group>"; };
 		046FF7B91C7574820056977C /* YLWTitleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWTitleScrollView.m; sourceTree = "<group>"; };
@@ -115,18 +111,8 @@
 		0489AE9A1C748B0C00E2998C /* YLWTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWTabBarController.m; sourceTree = "<group>"; };
 		0489AE9C1C748D5000E2998C /* YLWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWHomeViewController.h; sourceTree = "<group>"; };
 		0489AE9D1C748D5000E2998C /* YLWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWHomeViewController.m; sourceTree = "<group>"; };
-		0489AEA51C748DBA00E2998C /* YLWUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWUserViewController.h; sourceTree = "<group>"; };
-		0489AEA61C748DBA00E2998C /* YLWUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWUserViewController.m; sourceTree = "<group>"; };
 		0489AEA81C748E5C00E2998C /* YLWWeeklyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWWeeklyViewController.h; sourceTree = "<group>"; };
 		0489AEA91C748E5C00E2998C /* YLWWeeklyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWWeeklyViewController.m; sourceTree = "<group>"; };
-		049589A11C79D341008714B4 /* YLWUserItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWUserItemModel.h; sourceTree = "<group>"; };
-		049589A21C79D341008714B4 /* YLWUserItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWUserItemModel.m; sourceTree = "<group>"; };
-		049589A41C79D810008714B4 /* YLWUserGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWUserGroupModel.h; sourceTree = "<group>"; };
-		049589A51C79D810008714B4 /* YLWUserGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWUserGroupModel.m; sourceTree = "<group>"; };
-		049589A71C79E5B9008714B4 /* YLWUserLoginCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWUserLoginCell.h; sourceTree = "<group>"; };
-		049589A81C79E5B9008714B4 /* YLWUserLoginCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWUserLoginCell.m; sourceTree = "<group>"; };
-		049589AA1C79E788008714B4 /* YLWUserLoginCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLWUserLoginCell.xib; sourceTree = "<group>"; };
-		049589AD1C79F699008714B4 /* YLWUserLoginController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YLWUserLoginController.storyboard; sourceTree = "<group>"; };
 		04B1A24B1C7CB81300064B62 /* YLWDetailTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWDetailTextViewController.h; sourceTree = "<group>"; };
 		04B1A24C1C7CB81300064B62 /* YLWDetailTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWDetailTextViewController.m; sourceTree = "<group>"; };
 		04B1A24E1C7CB82F00064B62 /* YLWDetailTextModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWDetailTextModel.h; sourceTree = "<group>"; };
@@ -138,10 +124,6 @@
 		04B82BD71C817EE500654527 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		04B82BD91C817F3100654527 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		04B82BDB1C817F3F00654527 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		04B9F7431C7A283F0081FF96 /* YLWUserLoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWUserLoginModel.h; sourceTree = "<group>"; };
-		04B9F7441C7A283F0081FF96 /* YLWUserLoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWUserLoginModel.m; sourceTree = "<group>"; };
-		04BB3E3A1C7B624900ED063B /* YLWUserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWUserInfoViewController.h; sourceTree = "<group>"; };
-		04BB3E3B1C7B624900ED063B /* YLWUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWUserInfoViewController.m; sourceTree = "<group>"; };
 		04BDB5771C8834B900296703 /* YLWSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWSearchViewController.h; sourceTree = "<group>"; };
 		04BDB5781C8834B900296703 /* YLWSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWSearchViewController.m; sourceTree = "<group>"; };
 		04DAE1F71C8209D300F20AFF /* YLWTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWTopicViewController.h; sourceTree = "<group>"; };
@@ -160,6 +142,24 @@
 		5ACF2309B4502C3231BFD5CB /* Pods-推库iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-推库iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-推库iOS/Pods-推库iOS.release.xcconfig"; sourceTree = "<group>"; };
 		89057CC06682018B56AEE676 /* libPods-推库iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-推库iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B603E2021EB45DA60050BC36 /* StringDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringDef.h; sourceTree = "<group>"; };
+		B603E2051EB474510050BC36 /* YLWUserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWUserInfoViewController.h; sourceTree = "<group>"; };
+		B603E2061EB474510050BC36 /* YLWUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWUserInfoViewController.m; sourceTree = "<group>"; };
+		B603E2071EB474510050BC36 /* YLWUserLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWUserLoginController.h; sourceTree = "<group>"; };
+		B603E2081EB474510050BC36 /* YLWUserLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWUserLoginController.m; sourceTree = "<group>"; };
+		B603E2091EB474510050BC36 /* YLWUserLoginController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YLWUserLoginController.storyboard; sourceTree = "<group>"; };
+		B603E20A1EB474510050BC36 /* YLWUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWUserViewController.h; sourceTree = "<group>"; };
+		B603E20B1EB474510050BC36 /* YLWUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWUserViewController.m; sourceTree = "<group>"; };
+		B603E20D1EB474510050BC36 /* YLWUserGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWUserGroupModel.h; sourceTree = "<group>"; };
+		B603E20E1EB474510050BC36 /* YLWUserGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWUserGroupModel.m; sourceTree = "<group>"; };
+		B603E20F1EB474510050BC36 /* YLWUserItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWUserItemModel.h; sourceTree = "<group>"; };
+		B603E2101EB474510050BC36 /* YLWUserItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWUserItemModel.m; sourceTree = "<group>"; };
+		B603E2111EB474510050BC36 /* YLWUserLoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWUserLoginModel.h; sourceTree = "<group>"; };
+		B603E2121EB474510050BC36 /* YLWUserLoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWUserLoginModel.m; sourceTree = "<group>"; };
+		B603E2131EB474510050BC36 /* YLWUserMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWUserMessageModel.h; sourceTree = "<group>"; };
+		B603E2141EB474510050BC36 /* YLWUserMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWUserMessageModel.m; sourceTree = "<group>"; };
+		B603E2161EB474510050BC36 /* YLWUserLoginCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWUserLoginCell.h; sourceTree = "<group>"; };
+		B603E2171EB474510050BC36 /* YLWUserLoginCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWUserLoginCell.m; sourceTree = "<group>"; };
+		B603E2181EB474510050BC36 /* YLWUserLoginCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLWUserLoginCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -355,13 +355,13 @@
 		0489AE7F1C748A8800E2998C /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				B603E2031EB474510050BC36 /* Setting */,
 				0489AE841C748A8800E2998C /* Main */,
 				0489AE801C748A8800E2998C /* Home(文章) */,
 				0489AE881C748A8800E2998C /* Site(站点) */,
 				0489AE8C1C748A8800E2998C /* Topic(主题) */,
 				0489AE941C748A8800E2998C /* Weekly(周刊) */,
 				04B82BA31C817E1200654527 /* 3th */,
-				0489AE901C748A8800E2998C /* User(我的) */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -523,51 +523,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		0489AE901C748A8800E2998C /* User(我的) */ = {
-			isa = PBXGroup;
-			children = (
-				0489AE911C748A8800E2998C /* Controller */,
-				0489AE921C748A8800E2998C /* Model */,
-				0489AE931C748A8800E2998C /* View */,
-			);
-			path = "User(我的)";
-			sourceTree = "<group>";
-		};
-		0489AE911C748A8800E2998C /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				049589AC1C79F666008714B4 /* Login */,
-				0489AEA51C748DBA00E2998C /* YLWUserViewController.h */,
-				0489AEA61C748DBA00E2998C /* YLWUserViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		0489AE921C748A8800E2998C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				049589A11C79D341008714B4 /* YLWUserItemModel.h */,
-				049589A21C79D341008714B4 /* YLWUserItemModel.m */,
-				049589A41C79D810008714B4 /* YLWUserGroupModel.h */,
-				049589A51C79D810008714B4 /* YLWUserGroupModel.m */,
-				0464C7561C7A0F880087A477 /* YLWUserMessageModel.h */,
-				0464C7571C7A0F880087A477 /* YLWUserMessageModel.m */,
-				04B9F7431C7A283F0081FF96 /* YLWUserLoginModel.h */,
-				04B9F7441C7A283F0081FF96 /* YLWUserLoginModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		0489AE931C748A8800E2998C /* View */ = {
-			isa = PBXGroup;
-			children = (
-				049589A71C79E5B9008714B4 /* YLWUserLoginCell.h */,
-				049589A81C79E5B9008714B4 /* YLWUserLoginCell.m */,
-				049589AA1C79E788008714B4 /* YLWUserLoginCell.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		0489AE941C748A8800E2998C /* Weekly(周刊) */ = {
 			isa = PBXGroup;
 			children = (
@@ -618,18 +573,6 @@
 			path = Class;
 			sourceTree = "<group>";
 		};
-		049589AC1C79F666008714B4 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				049589AD1C79F699008714B4 /* YLWUserLoginController.storyboard */,
-				0464C74F1C7A036D0087A477 /* YLWUserLoginController.h */,
-				0464C7501C7A036D0087A477 /* YLWUserLoginController.m */,
-				04BB3E3A1C7B624900ED063B /* YLWUserInfoViewController.h */,
-				04BB3E3B1C7B624900ED063B /* YLWUserInfoViewController.m */,
-			);
-			name = Login;
-			sourceTree = "<group>";
-		};
 		04B82BA31C817E1200654527 /* 3th */ = {
 			isa = PBXGroup;
 			children = (
@@ -653,6 +596,55 @@
 				B603E2021EB45DA60050BC36 /* StringDef.h */,
 			);
 			name = String;
+			sourceTree = "<group>";
+		};
+		B603E2031EB474510050BC36 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				B603E2041EB474510050BC36 /* Controller */,
+				B603E20C1EB474510050BC36 /* Model */,
+				B603E2151EB474510050BC36 /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		B603E2041EB474510050BC36 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B603E2051EB474510050BC36 /* YLWUserInfoViewController.h */,
+				B603E2061EB474510050BC36 /* YLWUserInfoViewController.m */,
+				B603E2071EB474510050BC36 /* YLWUserLoginController.h */,
+				B603E2081EB474510050BC36 /* YLWUserLoginController.m */,
+				B603E2091EB474510050BC36 /* YLWUserLoginController.storyboard */,
+				B603E20A1EB474510050BC36 /* YLWUserViewController.h */,
+				B603E20B1EB474510050BC36 /* YLWUserViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B603E20C1EB474510050BC36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B603E20D1EB474510050BC36 /* YLWUserGroupModel.h */,
+				B603E20E1EB474510050BC36 /* YLWUserGroupModel.m */,
+				B603E20F1EB474510050BC36 /* YLWUserItemModel.h */,
+				B603E2101EB474510050BC36 /* YLWUserItemModel.m */,
+				B603E2111EB474510050BC36 /* YLWUserLoginModel.h */,
+				B603E2121EB474510050BC36 /* YLWUserLoginModel.m */,
+				B603E2131EB474510050BC36 /* YLWUserMessageModel.h */,
+				B603E2141EB474510050BC36 /* YLWUserMessageModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B603E2151EB474510050BC36 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B603E2161EB474510050BC36 /* YLWUserLoginCell.h */,
+				B603E2171EB474510050BC36 /* YLWUserLoginCell.m */,
+				B603E2181EB474510050BC36 /* YLWUserLoginCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D310E6AA13DB41176AEB2075 /* Frameworks */ = {
@@ -731,16 +723,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B603E21B1EB474510050BC36 /* YLWUserLoginController.storyboard in Resources */,
 				046513DE1C81600300F6E458 /* article_image.png in Resources */,
-				049589AB1C79E788008714B4 /* YLWUserLoginCell.xib in Resources */,
 				046FF7BC1C757CF00056977C /* titleArray.plist in Resources */,
 				045CBA261C760DFE00032F2F /* YLWNewsTableViewCell.xib in Resources */,
-				049589AE1C79F699008714B4 /* YLWUserLoginController.storyboard in Resources */,
 				04B1A2521C7CBA8900064B62 /* article_detail.html in Resources */,
 				0489AE781C74884700E2998C /* LaunchScreen.storyboard in Resources */,
 				0489AE751C74884700E2998C /* Assets.xcassets in Resources */,
 				0422229F1C8830C10024A726 /* search.plist in Resources */,
 				04713B171C77337300D0B02B /* YLWSiteItemTableViewCell.xib in Resources */,
+				B603E2221EB474510050BC36 /* YLWUserLoginCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -801,41 +793,41 @@
 			files = (
 				047AFEF61C788751006FF9A0 /* YLWHttpTool.m in Sources */,
 				04DAE1F91C8209D300F20AFF /* YLWTopicViewController.m in Sources */,
-				04B9F7451C7A283F0081FF96 /* YLWUserLoginModel.m in Sources */,
 				04889D671C8433E900834BAA /* YLWArticalTool.m in Sources */,
 				0489AEAA1C748E5C00E2998C /* YLWWeeklyViewController.m in Sources */,
 				046FF7C21C758E770056977C /* YLWContentCollectionView.m in Sources */,
 				045CBA241C760D8900032F2F /* YLWNewsTableViewCell.m in Sources */,
 				046FF7CC1C75A1800056977C /* YLWContentTableViewController.m in Sources */,
-				0489AEA71C748DBA00E2998C /* YLWUserViewController.m in Sources */,
 				04DAE2051C820A4400F20AFF /* YLWSiteItemModel.m in Sources */,
-				049589A61C79D810008714B4 /* YLWUserGroupModel.m in Sources */,
-				04BB3E3C1C7B624900ED063B /* YLWUserInfoViewController.m in Sources */,
 				04B1A24D1C7CB81300064B62 /* YLWDetailTextViewController.m in Sources */,
 				0489AE6D1C74884700E2998C /* AppDelegate.m in Sources */,
 				04DAE2081C820A5800F20AFF /* YLWTopicItemModel.m in Sources */,
-				049589A31C79D341008714B4 /* YLWUserItemModel.m in Sources */,
 				044AB1BC1C88878D00AFB3B7 /* YLWDayNightTool.m in Sources */,
-				0464C7581C7A0F880087A477 /* YLWUserMessageModel.m in Sources */,
+				B603E21C1EB474510050BC36 /* YLWUserViewController.m in Sources */,
 				04BDB5791C8834B900296703 /* YLWSearchViewController.m in Sources */,
-				049589A91C79E5B9008714B4 /* YLWUserLoginCell.m in Sources */,
 				04B1A2501C7CB82F00064B62 /* YLWDetailTextModel.m in Sources */,
 				046FF7C51C7596D10056977C /* YLWCollectionViewCell.m in Sources */,
 				046FF7BA1C7574820056977C /* YLWTitleScrollView.m in Sources */,
 				04713B151C772FA100D0B02B /* YLWSiteItemTableViewCell.m in Sources */,
-				0464C7511C7A036D0087A477 /* YLWUserLoginController.m in Sources */,
+				B603E21A1EB474510050BC36 /* YLWUserLoginController.m in Sources */,
 				0489AE9B1C748B0C00E2998C /* YLWTabBarController.m in Sources */,
 				042222A51C8833000024A726 /* YLWBasesHomeViewController.m in Sources */,
+				B603E2201EB474510050BC36 /* YLWUserMessageModel.m in Sources */,
 				0489AE9E1C748D5000E2998C /* YLWHomeViewController.m in Sources */,
+				B603E21D1EB474510050BC36 /* YLWUserGroupModel.m in Sources */,
 				046FF7BF1C7580610056977C /* YLWTitleModel.m in Sources */,
 				048803681C7C7C8A005B51DE /* YLWConst.m in Sources */,
 				048104B71C7F3654000DAB3C /* YLWImageModel.m in Sources */,
 				0464C7541C7A05690087A477 /* YLWNavigationController.m in Sources */,
+				B603E2191EB474510050BC36 /* YLWUserInfoViewController.m in Sources */,
 				04DAE2021C820A2B00F20AFF /* YLWArticleModel.m in Sources */,
 				04DAE1FF1C820A0800F20AFF /* YLWBaseSTableViewController.m in Sources */,
 				04716ED51C7D83E6007900AB /* UIBarButtonItem+CustomByButton.m in Sources */,
+				B603E21F1EB474510050BC36 /* YLWUserLoginModel.m in Sources */,
 				0489AE6A1C74884700E2998C /* main.m in Sources */,
+				B603E21E1EB474510050BC36 /* YLWUserItemModel.m in Sources */,
 				04DAE1FC1C8209E800F20AFF /* YLWSiteViewController.m in Sources */,
+				B603E2211EB474510050BC36 /* YLWUserLoginCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
