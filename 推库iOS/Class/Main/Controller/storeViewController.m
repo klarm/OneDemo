@@ -9,9 +9,11 @@
 #import "storeViewController.h"
 #import "storeCell.h"
 
+NSString * const strMyMainPage = @"主页";
+
+
 #define fDeviceWidth ([UIScreen mainScreen].bounds.size.width)
 #define fDeviceHeight ([UIScreen mainScreen].bounds.size.height)
-static float AD_height = 150;//广告栏高度
 
 @interface storeViewController ()
 
@@ -24,8 +26,9 @@ static float AD_height = 150;//广告栏高度
     // Do any additional setup after loading the view.
     //导航栏背景颜色
     [self.navigationController.navigationBar setBarTintColor:[UIColor orangeColor]];
-    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],NSForegroundColorAttributeName,[UIFont boldSystemFontOfSize:20.0f],NSFontAttributeName, nil]];
-    self.navigationItem.title = @"自定义collectionView";
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,[UIFont boldSystemFontOfSize:20.0f],NSFontAttributeName, nil]];
+    self.navigationItem.leftBarButtonItem = nil;
+    self.navigationItem.title = strMyMainPage;
     
     /**
      *  创建collectionView self自动调用setter getter方法
