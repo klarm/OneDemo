@@ -9,5 +9,11 @@ Custom collection view cell for image and its label.
 @import UIKit;
 
 @interface storeCell : UICollectionViewCell
+@property(nonatomic ,strong)UIImageView *imgView;
+@property(nonatomic ,strong)UILabel *title;
+@property(nonatomic ,strong)UILabel *subTitle;
+
+-(void)setCellData:(NSDictionary*)dic;
+
 
 @end

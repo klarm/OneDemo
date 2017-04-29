@@ -60,7 +60,7 @@ static float AD_height = 150;//广告栏高度
         _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, fDeviceWidth, fDeviceHeight) collectionViewLayout:flowLayout];
         
         //定义每个UICollectionView 的大小
-        flowLayout.itemSize = CGSizeMake((fDeviceWidth-20)/2, (fDeviceWidth-20)/2+50);
+        flowLayout.itemSize = CGSizeMake((fDeviceWidth-20)/2, (fDeviceWidth-20)/2);
         //定义每个UICollectionView 横向的间距
         flowLayout.minimumLineSpacing = 5;
         //定义每个UICollectionView 纵向的间距
@@ -70,6 +70,7 @@ static float AD_height = 150;//广告栏高度
         
         //注册cell和ReusableView（相当于头部）
         [_collectionView registerClass:[storeCell class] forCellWithReuseIdentifier:@"storeCell"];
+        
         [_collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"ReusableView"];
         
         //设置代理
@@ -85,28 +86,6 @@ static float AD_height = 150;//广告栏高度
     return _collectionView;
 }
 
-#pragma mark - 定时滚动scrollView
--(void)viewDidAppear:(BOOL)animated {//显示窗口
-    [super viewDidAppear:animated];
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        [_headerView openTimer];//开启定时器
-//    });
-}
--(void)viewWillDisappear:(BOOL)animated {//将要隐藏窗口
-    [super viewWillDisappear:animated];
-//    if (_headerView.totalNum>1) {
-//        [_headerView closeTimer];//关闭定时器
-//    }
-}
-#pragma mark - scrollView也是适用于tableView的cell滚动 将开始和将要结束滚动时调用
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-    //[_headerView closeTimer];//关闭定时器
-}
-- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
-//    if (_headerView.totalNum>1) {
-//        [_headerView openTimer];//开启定时器
-//    }
-}
 
 #pragma mark - UICollectionView delegate dataSource
 #pragma mark 定义展示的UICollectionViewCell的个数
@@ -128,20 +107,7 @@ static float AD_height = 150;//广告栏高度
     storeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identify forIndexPath:indexPath];
     [cell sizeToFit];
 
-//    cell.imgView.image = [UIImage imageNamed:_cellArray[indexPath.item]];
-//    cell.text.text = [NSString stringWithFormat:@"Cell %ld",indexPath.item];
-    //按钮事件就不实现了……
     return cell;
-}
-
-#pragma mark 头部显示的内容
-- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
-{
-    UICollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:
-                                            UICollectionElementKindSectionHeader withReuseIdentifier:@"ReusableView" forIndexPath:indexPath];
-    
-    //[headerView addSubview:_headerView];//头部广告栏
-    return headerView;
 }
 
 #pragma mark UICollectionView被选中时调用的方法

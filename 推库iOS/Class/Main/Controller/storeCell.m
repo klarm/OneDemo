@@ -15,11 +15,26 @@ Custom collection view cell for image and its label.
     self = [super initWithCoder:aDecoder];
     if (self)
     {
-        // change to our custom selected background view
-//        CustomCellBackground *backgroundView = [[CustomCellBackground alloc] initWithFrame:CGRectZero];
-//        self.selectedBackgroundView = backgroundView;
+        self.imgView = [[UIImageView alloc]initWithFrame:CGRectMake(5, 5, CGRectGetWidth(self.frame)-10, CGRectGetWidth(self.frame)-10)];
+        self.imgView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+        [self addSubview:self.imgView];
+        
+        self.title = [[UILabel alloc]initWithFrame:CGRectMake(5, CGRectGetMaxY(self.imgView.frame), CGRectGetWidth(self.frame)-10, 20)];
+        self.title.backgroundColor = [UIColor brownColor];
+        self.title.textAlignment = NSTextAlignmentCenter;
+        [self addSubview:self.title];
+        
+        self.subTitle = [[UILabel alloc]initWithFrame:CGRectMake(5, CGRectGetMaxY(self.title.frame), CGRectGetWidth(self.frame)-10, 20)];
+        self.subTitle.backgroundColor = [UIColor brownColor];
+        self.subTitle.textAlignment = NSTextAlignmentCenter;
+        [self addSubview:self.subTitle];
     }
     return self;
+}
+
+-(void)setCellData:(NSDictionary*)dic
+{
+    
 }
 
 @end
