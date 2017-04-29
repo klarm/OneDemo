@@ -26,17 +26,17 @@
  */
 -(void)getViewData{
 
-    __weak typeof(self) weakself = self;
-    [YLWSiteItemModel siteItemModelWithURLstring:@"http://api.tuicool.com/api/sites/user_default.json" lastArray:(NSArray *)self.itemModelArray  successblock:^(NSArray *itemArray) {
-       
-        weakself.itemModelArray = itemArray;
-        [weakself.tableView reloadData];
-        weakself.tableView.tableFooterView = weakself.footView;
-        
-    }];
-    
-    
-    
+//    __weak typeof(self) weakself = self;
+//    [YLWSiteItemModel siteItemModelWithURLstring:@"http://api.tuicool.com/api/sites/user_default.json" lastArray:(NSArray *)self.itemModelArray  successblock:^(NSArray *itemArray) {
+//       
+//        weakself.itemModelArray = itemArray;
+//        [weakself.tableView reloadData];
+//        weakself.tableView.tableFooterView = weakself.footView;
+//        
+//    }];
+//    
+//    
+//    
 }
 
 
