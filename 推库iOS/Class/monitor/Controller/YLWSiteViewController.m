@@ -24,7 +24,7 @@
 /**
  *  获取站点的数据
  */
--(void)getSiteData{
+-(void)getViewData{
 
     __weak typeof(self) weakself = self;
     [YLWSiteItemModel siteItemModelWithURLstring:@"http://api.tuicool.com/api/sites/user_default.json" lastArray:(NSArray *)self.itemModelArray  successblock:^(NSArray *itemArray) {

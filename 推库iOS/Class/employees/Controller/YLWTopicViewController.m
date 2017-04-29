@@ -20,24 +20,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-
-    
-    
 }
 
 #pragma mark - 获取数据
--(void)getSiteData{
-    __weak typeof(self) weakself = self;
-    [YLWTopicItemModel topicItemModelWithURLstring:@"http://api.tuicool.com/api/topics/user_default.json" lastArray:(NSArray *)self.itemModelArray successblock:^(NSArray *itemArray) {
-       
-        weakself.itemModelArray = itemArray;
-        
-        [weakself.tableView reloadData];
-        
-        weakself.tableView.tableFooterView = weakself.footView;
-    }];
+-(void)getViewData{
+    
+    NSData *JSONData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"employees" ofType:@"json"]];
+    
+    NSDictionary *dataDic = [NSJSONSerialization JSONObjectWithData:JSONData options:NSJSONReadingAllowFragments error:nil];
+    
+    NSArray *dataArray = [dataDic objectForKey:@"employees"];
+    
+    self.itemModelArray = [YLWSiteItemModel initWithArray:dataArray];
+    
+    [self.tableView reloadData];
+    
+    self.tableView.tableFooterView = self.footView;
+    
+    
+//    __weak typeof(self) weakself = self;
+//    [YLWTopicItemModel topicItemModelWithURLstring:@"http://api.tuicool.com/api/topics/user_default.json" lastArray:(NSArray *)self.itemModelArray successblock:^(NSArray *itemArray) {
+//       
+//        weakself.itemModelArray = itemArray;
+//        
+//        [weakself.tableView reloadData];
+//        
+//        weakself.tableView.tableFooterView = weakself.footView;
+//    }];
 
 }
 
@@ -53,7 +62,7 @@
     YLWSiteItemTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SiteCellIdentifier"];
     
     if (cell == nil) {
-        cell= [[YLWSiteItemTableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"SiteCellIdentifier"];
+        cell= [[YLWSiteItemTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"SiteCellIdentifier"];
     }
     
     YLWSiteItemModel *model = self.itemModelArray[indexPath.row];

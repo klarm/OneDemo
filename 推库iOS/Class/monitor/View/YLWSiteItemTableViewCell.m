@@ -25,7 +25,8 @@
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
 
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.iconImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
+        
+        self.iconImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 25, 25)];
         self.iconImageView.layer.cornerRadius = 12;
         self.iconImageView.layer.masksToBounds = YES;
         self.iconImageView.layer.borderWidth = 1;

@@ -59,6 +59,7 @@
 		B603E2651EB4775A0050BC36 /* YLWNewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E2561EB4775A0050BC36 /* YLWNewsTableViewCell.m */; };
 		B603E2661EB4775A0050BC36 /* YLWNewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B603E2571EB4775A0050BC36 /* YLWNewsTableViewCell.xib */; };
 		B603E2671EB4775A0050BC36 /* YLWTitleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E2591EB4775A0050BC36 /* YLWTitleScrollView.m */; };
+		B603E26A1EB4811A0050BC36 /* employees.json in Resources */ = {isa = PBXBuildFile; fileRef = B603E2691EB4811A0050BC36 /* employees.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -155,6 +156,7 @@
 		B603E2571EB4775A0050BC36 /* YLWNewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLWNewsTableViewCell.xib; sourceTree = "<group>"; };
 		B603E2581EB4775A0050BC36 /* YLWTitleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWTitleScrollView.h; sourceTree = "<group>"; };
 		B603E2591EB4775A0050BC36 /* YLWTitleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWTitleScrollView.m; sourceTree = "<group>"; };
+		B603E2691EB4811A0050BC36 /* employees.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = employees.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +266,7 @@
 				0489AE7F1C748A8800E2998C /* Class */,
 				0489AE981C748A9500E2998C /* Other */,
 				0464C7551C7A063F0087A477 /* PrefixHeader.pch */,
+				B603E2681EB4811A0050BC36 /* Data */,
 				0489AE681C74884700E2998C /* Supporting Files */,
 			);
 			name = iOSDemo;
@@ -534,6 +537,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B603E2681EB4811A0050BC36 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B603E2691EB4811A0050BC36 /* employees.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		D310E6AA13DB41176AEB2075 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -613,6 +624,7 @@
 				B603E21B1EB474510050BC36 /* YLWUserLoginController.storyboard in Resources */,
 				B603E2661EB4775A0050BC36 /* YLWNewsTableViewCell.xib in Resources */,
 				046513DE1C81600300F6E458 /* article_image.png in Resources */,
+				B603E26A1EB4811A0050BC36 /* employees.json in Resources */,
 				046FF7BC1C757CF00056977C /* titleArray.plist in Resources */,
 				04B1A2521C7CBA8900064B62 /* article_detail.html in Resources */,
 				0489AE781C74884700E2998C /* LaunchScreen.storyboard in Resources */,

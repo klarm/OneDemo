@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 typedef void(^SuccessBlock)(NSArray *itemArray);
 typedef void(^CompletBlock)(NSArray *itemArray ,SuccessBlock *successBlock);
+
+
 @interface YLWSiteItemModel : NSObject
 /*
  "id": "YRVbMz",
@@ -41,4 +43,7 @@ typedef void(^CompletBlock)(NSArray *itemArray ,SuccessBlock *successBlock);
 
 
 +(void)siteItemModelWithURLstring:(NSString *)URLString lastArray:(NSArray *)lastArray successblock:(SuccessBlock)successBlock;
+
++(NSArray*)initWithArray:(NSArray*)array;
+
 @end

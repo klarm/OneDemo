@@ -30,6 +30,18 @@
 
 }
 
++(NSArray*)initWithArray:(NSArray*)array
+{
+    NSMutableArray* muArray = [NSMutableArray array];
+    for (id item in array) {
+        if ([item isKindOfClass:[NSDictionary class]] ) {
+            [muArray addObject:[YLWSiteItemModel siteItemModelWithDictionary:item]];
+        }
+    }
+    
+    return muArray;
+}
+
 +(void)siteItemModelWithURLstring:(NSString *)URLString  lastArray:(NSArray *)lastArray successblock:(SuccessBlock)successBlock{
 
     [SVProgressHUD show];

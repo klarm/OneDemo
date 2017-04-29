@@ -68,11 +68,11 @@
     
     [self setNav];
     
-    [self getSiteData];
+    [self getViewData];
     
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         
-        [self getSiteData];
+        [self getViewData];
         [self.tableView.mj_header endRefreshing];
         
     }];
@@ -101,16 +101,13 @@
  *  导航栏更多(右侧)按钮
  */
 -(void)moreBtn{
-    
-    
-    
 }
 
 #pragma mark 获取数据
 /**
  *  获取站点的数据
  */
--(void)getSiteData{
+-(void)getViewData{
     
     __weak typeof(self) weakself = self;
     [YLWSiteItemModel siteItemModelWithURLstring:@"http://api.tuicool.com/api/sites/user_default.json" lastArray:(NSArray *)self.itemModelArray  successblock:^(NSArray *itemArray) {
@@ -120,13 +117,7 @@
         weakself.tableView.tableFooterView = weakself.footView;
         
     }];
-    
-    
-    
 }
-
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -142,13 +133,12 @@
     
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     YLWSiteItemTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SiteCellIdentifier"];
     
     if (cell == nil) {
-        cell= [[YLWSiteItemTableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"SiteCellIdentifier"];
+        cell= [[YLWSiteItemTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"SiteCellIdentifier"];
     }
     
     
@@ -158,7 +148,5 @@
     
     return cell;
 }
-
-
 
 @end
