@@ -25,12 +25,24 @@
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
 
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.iconImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 40, 40)];
+        self.iconImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
         self.iconImageView.layer.cornerRadius = 12;
         self.iconImageView.layer.masksToBounds = YES;
         self.iconImageView.layer.borderWidth = 1;
         self.iconImageView.layer.borderColor = [UIColor colorWithRed:211 / 255.0 green:211 / 255.0 blue:211 / 255.0 alpha:1].CGColor;
         [self.contentView addSubview:self.iconImageView];
+        
+        self.time = [[UILabel alloc]initWithFrame:CGRectZero];
+        [self.contentView addSubview:self.time];
+
+        self.house = [[UILabel alloc]initWithFrame:CGRectZero];
+        [self.contentView addSubview:self.house];
+
+        self.name = [[UILabel alloc]initWithFrame:CGRectZero];
+        [self.contentView addSubview:self.name];
+
+        self.timing = [[UILabel alloc]initWithFrame:CGRectZero];
+        [self.contentView addSubview:self.timing];
     }
     return self;
 }
@@ -39,20 +51,13 @@
 
     _siteItemModel = siteItemModel;
     
-//    self.nameLabel.text = siteItemModel.name;
-//    NSLog(@"%@",siteItemModel.count);
-//    if (siteItemModel.count.length > 0 ) {
-//        self.CountBtn.hidden = NO;
-//        self.CountBtn.titleLabel.text = siteItemModel.count;
-//    }else{
-//    
-//        self.CountBtn.hidden = YES;
-//    }
-    
-    
-    
     [self.iconImageView sd_setImageWithURL:[NSURL URLWithString:siteItemModel.image] placeholderImage:[UIImage imageNamed:@"abs_pic"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
     }];
+    
+    self.time.text = siteItemModel.time;
+    self.house.text = siteItemModel.house;
+    self.name.text = siteItemModel.name;
+    self.timing.text = siteItemModel.timing;
 
 }
 

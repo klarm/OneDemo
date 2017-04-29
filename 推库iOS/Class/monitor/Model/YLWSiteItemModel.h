@@ -36,5 +36,9 @@ typedef void(^CompletBlock)(NSArray *itemArray ,SuccessBlock *successBlock);
 
 @property (nonatomic,assign) BOOL didSelected;
 
+@property (copy, nonatomic)  NSString *house;
+@property (copy, nonatomic)  NSString *timing;
+
+
 +(void)siteItemModelWithURLstring:(NSString *)URLString lastArray:(NSArray *)lastArray successblock:(SuccessBlock)successBlock;
 @end
