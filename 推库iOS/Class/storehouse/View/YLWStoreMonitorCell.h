@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-@class YLWArticleModel;
 
-@interface YLWStoreMonitorCell : UITableViewCell
-@property (nonatomic,strong) YLWArticleModel *articleModel;
+@interface YLWStoreMonitorCell0 : UITableViewCell
+
+@end
+
+@interface YLWStoreMonitorCell1 : UITableViewCell
+
+@end
+
+@interface YLWStoreMonitorSearchCell : UITableViewCell
 
 @end

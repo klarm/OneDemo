@@ -10,51 +10,99 @@
 #import "YLWArticleModel.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 
-@interface YLWStoreMonitorCell()
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (weak, nonatomic) IBOutlet UILabel *feed_titleLabel;
+@interface YLWStoreMonitorCell0()
 
-@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
-
-@property (weak, nonatomic) IBOutlet UIImageView *iconImageView;
-
+@property (strong, nonatomic)  UILabel *ID;
+@property (strong, nonatomic)  UILabel *Type;
+@property (strong, nonatomic)  UILabel *temHight;
+@property (strong, nonatomic)  UILabel *temAvg;
+@property (strong, nonatomic)  UILabel *status;
 
 @end
-@implementation YLWStoreMonitorCell
 
-- (void)awakeFromNib {
-    // Initialization code
+@implementation YLWStoreMonitorCell0
+
+-(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        _ID = [[UILabel alloc]initWithFrame:CGRectZero];
+        _Type = [[UILabel alloc]initWithFrame:CGRectZero];
+        _temHight = [[UILabel alloc]initWithFrame:CGRectZero];
+        _temAvg = [[UILabel alloc]initWithFrame:CGRectZero];
+        _status = [[UILabel alloc]initWithFrame:CGRectZero];
+        
+        [self.contentView addSubview:_ID];
+        [self.contentView addSubview:_Type];
+        [self.contentView addSubview:_temHight];
+        [self.contentView addSubview:_temAvg];
+        [self.contentView addSubview:_status];
+    }
+
+    return self;
 }
 
--(void)setArticleModel:(YLWArticleModel *)articleModel{
+-(void)layoutSubviews
+{
+    
+}
 
-    _articleModel = articleModel;
+@end
+
+@interface YLWStoreMonitorCell1()
+
+@property (strong, nonatomic)  UILabel *ID;
+@property (strong, nonatomic)  UILabel *Type;
+@property (strong, nonatomic)  UILabel *temHight;
+@property (strong, nonatomic)  UILabel *temAvg;
+@property (strong, nonatomic)  UILabel *status;
+
+@end
+
+@implementation YLWStoreMonitorCell1
+
+-(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     
-    self.titleLabel.text = articleModel.title;
-    self.feed_titleLabel.text = articleModel.feed_title;
-    self.timeLabel.text = articleModel.time;
-    
-    if (articleModel.img) {
-     
-//        [self.iconImageView sd_setImageWithURL:[NSURL URLWithString:articleModel.img] placeholderImage:[UIImage imageNamed:@"abs_pic"]];
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        _ID = [[UILabel alloc]initWithFrame:CGRectZero];
+        _Type = [[UILabel alloc]initWithFrame:CGRectZero];
+        _temHight = [[UILabel alloc]initWithFrame:CGRectZero];
+        _temAvg = [[UILabel alloc]initWithFrame:CGRectZero];
+        _status = [[UILabel alloc]initWithFrame:CGRectZero];
         
-        [self.iconImageView sd_setImageWithURL:[NSURL URLWithString:articleModel.img] placeholderImage:[UIImage imageNamed:@"abs_pic"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-            
-            if (error) {
-                self.iconImageView.image = [UIImage imageNamed:@"abs_pic_broken"];
-            }
-            
-        }];
-
+        [self.contentView addSubview:_ID];
+        [self.contentView addSubview:_Type];
+        [self.contentView addSubview:_temHight];
+        [self.contentView addSubview:_temAvg];
+        [self.contentView addSubview:_status];
     }
     
-
+    return self;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
+-(void)layoutSubviews
+{
+    
+}
 
-    // Configure the view for the selected state
+@end
+
+@interface YLWStoreMonitorSearchCell()
+
+@end
+
+@implementation YLWStoreMonitorSearchCell
+
+-(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {   
+    }
+    
+    return self;
+}
+
+-(void)layoutSubviews
+{
+    
 }
 
 @end
