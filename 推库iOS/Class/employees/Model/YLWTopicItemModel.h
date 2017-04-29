@@ -32,7 +32,7 @@ typedef void(^CompletBlock)(NSArray *itemArray ,SuccessBlock *successBlock);
 
 @property (nonatomic,copy) NSString *time;
 
-@property (nonatomic,copy) NSString *storeHouse;
+@property (nonatomic,copy) NSString *house;
 
 @property (nonatomic,copy) NSString *name;
 
