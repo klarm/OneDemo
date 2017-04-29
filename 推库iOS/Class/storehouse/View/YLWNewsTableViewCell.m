@@ -9,6 +9,7 @@
 #import "YLWNewsTableViewCell.h"
 #import "YLWArticleModel.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+
 @interface YLWNewsTableViewCell()
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *feed_titleLabel;

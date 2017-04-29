@@ -13,24 +13,9 @@
 #import <Masonry.h>
 @interface YLWContentTableViewController ()
 @property (nonatomic,strong) NSMutableArray *articleModelArray;
-
-@property (nonatomic,assign) BOOL islogin;
-
-@property (nonatomic,strong) UIView *coverView;
 @end
 
 @implementation YLWContentTableViewController
-
--(UIView *)coverView{
-    
-    if (_coverView == nil) {
-        _coverView = [[UIView alloc]init];
-        _coverView.backgroundColor = [UIColor redColor];
-        _coverView.frame = self.view.bounds;
-        
-    }
-    return _coverView;
-}
 
 #pragma mark - 懒加载
 -(NSMutableArray *)articleModelArray{
@@ -45,26 +30,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.islogin = [YLWUserLoginModel sharedUserLoginModel].isLogin;
-    
     self.tableView.rowHeight = 73;
     
-    
-    
-    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        
-        [self getData];
-        [self.tableView.mj_header endRefreshing];
-        
-    }];
-    
-    self.tableView.mj_footer = [MJRefreshAutoFooter footerWithRefreshingBlock:^{
-        
-        [self footGetData];
-        
-        [self.tableView.mj_footer endRefreshing];
-        
-    }];
     
     [self getNetWorkstate];
     
@@ -114,32 +81,6 @@
 
 -(void)footGetData{
     
-    YLWArticleModel *lastModel = [self.articleModelArray lastObject];
-    
-    NSDictionary *par = [[NSDictionary alloc]init];
-    if (lastModel) {
-        
-        par = @{
-                @"last_id":lastModel.id,
-                @"last_time":lastModel.uts
-                };
-        
-    }
-    
-    if (!self.urlstring) {
-        return;
-    }
-    
-    __weak typeof(self) weakself = self;
-    [YLWArticleModel articleModelGetDataWithURLString:self.urlstring title:self.titlename parameters:nil successblack:^(NSArray *modelArray) {
-        
-        [weakself.articleModelArray  addObjectsFromArray:modelArray];
-        
-        [weakself.tableView reloadData];
-        
-    }];
-    
-    
     
 }
 
@@ -163,41 +104,37 @@
 
 -(void)getData{
     
-    __weak typeof(self) weakself = self;
-    AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
-    if (!manager.isReachable) {
-        
-        if ([self.titlename isEqualToString:@"热门"]) {
-            
-            [self.articleModelArray addObjectsFromArray:[YLWArticalTool Articalsback]];
-            
-            [self.tableView reloadData];
-            
-        }
-        
-        
-    }else {
-        
-        if (!self.urlstring) {
-            return;
-        }
-        [YLWArticleModel articleModelGetDataWithURLString:self.urlstring title:self.titlename parameters:nil successblack:^(NSArray *modelArray) {
-            
-            if (self.coverView) {
-                [weakself.coverView removeFromSuperview];
-            }
-            
-            [weakself.articleModelArray removeAllObjects];
-            [weakself.articleModelArray addObjectsFromArray:modelArray];
-            
-            [weakself.tableView reloadData];
-            
-            
-            
-        }];
-        
-        
-    }
+//    __weak typeof(self) weakself = self;
+//    AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
+//    if (!manager.isReachable) {
+//        
+//        if ([self.titlename isEqualToString:@"热门"]) {
+//            
+//            [self.articleModelArray addObjectsFromArray:[YLWArticalTool Articalsback]];
+//            
+//            [self.tableView reloadData];
+//            
+//        }
+//        
+//        
+//    }else {
+//        
+//        if (!self.urlstring) {
+//            return;
+//        }
+//        [YLWArticleModel articleModelGetDataWithURLString:self.urlstring title:self.titlename parameters:nil successblack:^(NSArray *modelArray) {
+//        
+//            [weakself.articleModelArray removeAllObjects];
+//            [weakself.articleModelArray addObjectsFromArray:modelArray];
+//            
+//            [weakself.tableView reloadData];
+//            
+//            
+//            
+//        }];
+//        
+//        
+//    }
     
     
 }
@@ -219,35 +156,37 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    YLWArticleModel *model = self.articleModelArray[indexPath.item];
+//    YLWArticleModel *model = self.articleModelArray[indexPath.item];
+//    
+//    NSString *ID = @"";
+//    if (model.img.length > 0) {
+//        
+//        ID = @"YLWNewsTableViewCell";
+//        
+//    }else{
+//        
+//        ID = @"YLWNewsTableViewCell1";
+//        
+//    }
+//    YLWNewsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+//    
+//    if (cell == nil) {
+//        if ([ID isEqualToString:@"YLWNewsTableViewCell"]) {
+//            cell = [[[NSBundle mainBundle] loadNibNamed:@"YLWNewsTableViewCell" owner:nil options:nil] lastObject];
+//        }else{
+//            
+//            cell = [[[NSBundle mainBundle] loadNibNamed:@"YLWNewsTableViewCell" owner:nil options:nil] firstObject];
+//            
+//        }
+//        
+//    }
+//    
+//    
+//    cell.articleModel = model;
     
-    NSString *ID = @"";
-    if (model.img.length > 0) {
-        
-        ID = @"YLWNewsTableViewCell";
-        
-    }else{
-        
-        ID = @"YLWNewsTableViewCell1";
-        
-    }
-    YLWNewsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    //return cell;
     
-    if (cell == nil) {
-        if ([ID isEqualToString:@"YLWNewsTableViewCell"]) {
-            cell = [[[NSBundle mainBundle] loadNibNamed:@"YLWNewsTableViewCell" owner:nil options:nil] lastObject];
-        }else{
-            
-            cell = [[[NSBundle mainBundle] loadNibNamed:@"YLWNewsTableViewCell" owner:nil options:nil] firstObject];
-            
-        }
-        
-    }
-    
-    
-    cell.articleModel = model;
-    
-    return cell;
+    return [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"123"];
 }
 
 #pragma mark 按钮的点击事件
