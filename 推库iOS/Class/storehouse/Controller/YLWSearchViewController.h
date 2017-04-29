@@ -9,6 +9,4 @@
 #import "YLWBasesHomeViewController.h"
 
 @interface YLWSearchViewController : YLWBasesHomeViewController
-
-
 @end

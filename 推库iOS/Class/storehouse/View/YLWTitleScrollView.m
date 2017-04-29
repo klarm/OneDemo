@@ -29,14 +29,8 @@
 
     _titleModelArray = titleModelArray;
     CGFloat titleLabelWidth = 0;
-    if (titleModelArray.count == 3) {
-        titleLabelWidth  = [UIScreen mainScreen].bounds.size.width *1.0/ 3;
-        
-    }else{
     
-        titleLabelWidth  = [UIScreen mainScreen].bounds.size.width *1.0/ 7;
-    
-    }
+   titleLabelWidth  = [UIScreen mainScreen].bounds.size.width *1.0/ titleModelArray.count;
     
     for (int i = 0; i <titleModelArray.count; i++) {
         YLWTitleModel *titleModel = titleModelArray[i];

@@ -14,6 +14,7 @@
 #import "YLWTitleScrollView.h"
 #import "YLWContentCollectionView.h"
 #import "YLWCollectionViewCell.h"
+
 @interface YLWBasesHomeViewController : UIViewController
 
 @property (nonatomic,strong) NSArray *titleModelArray;

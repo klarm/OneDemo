@@ -27,13 +27,13 @@
 }
 
 -(void)addChildViewControllers{
-
-    YLWHomeViewController *homeVc = [[YLWHomeViewController alloc]init];
-    [self addChildViewController:homeVc WithTitle:@"主页" image:@"tab_home"];
     
     YLWSiteViewController *site = [[YLWSiteViewController alloc]init];
-    [self addChildViewController:site WithTitle:@"监测" image:@"tab_site"];
-    
+    [self addChildViewController:site WithTitle:@"主页" image:@"tab_site"];
+
+    YLWHomeViewController *homeVc = [[YLWHomeViewController alloc]init];
+    [self addChildViewController:homeVc WithTitle:@"监测" image:@"tab_home"];
+        
     YLWTopicViewController *topic = [[YLWTopicViewController alloc]init];
     [self addChildViewController:topic WithTitle:@"人员考勤" image:@"tab_topic"];
     

@@ -12,10 +12,6 @@
 
 #define contentIdentifier @"contentCollectionViewIdentifier"
 @interface YLWBasesHomeViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,YLWTitleScrollViewDelegate>
-
-
-
-
 @end
 
 @implementation YLWBasesHomeViewController
@@ -80,16 +76,12 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.automaticallyAdjustsScrollViewInsets = NO;
-    
-    
 }
 
 
 
 #pragma mark - 设置子控件
 -(void)setUI{
-    
-    
     [self.view addSubview:self.titleScrollView];
     
     [self.view addSubview:self.contentCollectionView];
@@ -147,6 +139,7 @@
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
     [self scrollViewDidEndScrollingAnimation:scrollView];
 }
+
 -(void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
     
     int currentIndex = self.contentCollectionView.contentOffset.x /self.contentCollectionView.bounds.size.width;
@@ -172,13 +165,7 @@
     }
     
     [self.titleScrollView setContentOffset:CGPointMake(needscrollX, 0) animated:NO];
-    
-    
-    
 }
-
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
