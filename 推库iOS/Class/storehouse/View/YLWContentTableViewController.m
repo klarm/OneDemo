@@ -12,6 +12,7 @@
 #import "YLWDetailTextViewController.h"
 #import <Masonry.h>
 @interface YLWContentTableViewController ()
+@property (nonatomic,assign) NSInteger type;
 @property (nonatomic,strong) NSArray *cellModelArray;
 @end
 
@@ -89,9 +90,39 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell* cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"123"];
+    if (indexPath.section == 0) {
+         YLWStoreMonitorSearchCell *cell = [tableView dequeueReusableCellWithIdentifier:@"YLWStoreMonitorSearchCell"];
+        
+        if (!cell) {
+            cell = [[YLWStoreMonitorSearchCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"YLWStoreMonitorSearchCell"];
+        }
+        
+        return cell;
+    }
     
-    cell.backgroundColor = [UIColor greenColor];
+    if (indexPath.section == 1) {
+        if (self.type == 0) {
+            YLWStoreMonitorCell0 *cell = [tableView dequeueReusableCellWithIdentifier:@"YLWStoreMonitorCell0"];
+            
+            if (!cell) {
+                cell = [[YLWStoreMonitorCell0 alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"YLWStoreMonitorCell0"];
+            }
+            
+             return cell;
+
+        }else if (self.type == 1){
+            YLWStoreMonitorCell1 *cell = [tableView dequeueReusableCellWithIdentifier:@"YLWStoreMonitorCell1"];
+            
+            if (!cell) {
+                cell = [[YLWStoreMonitorCell1 alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"YLWStoreMonitorCell1"];
+            }
+            
+            return cell;
+        }
+    }
+    
+    NSAssert(NO, @"");
+     UITableViewCell* cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"123"];
     
     return cell;
 }
