@@ -159,6 +159,7 @@
 		2FB67D531C8FBD30AD4E02DA /* Pods-推库iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-推库iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-推库iOS/Pods-推库iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		5ACF2309B4502C3231BFD5CB /* Pods-推库iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-推库iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-推库iOS/Pods-推库iOS.release.xcconfig"; sourceTree = "<group>"; };
 		89057CC06682018B56AEE676 /* libPods-推库iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-推库iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B603E2021EB45DA60050BC36 /* StringDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringDef.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -603,6 +604,7 @@
 		0489AE981C748A9500E2998C /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				B603E2011EB45D630050BC36 /* String */,
 				0476EBD81C78A6DA007B0523 /* Plist */,
 				04716ED21C7D8358007900AB /* Categray */,
 				047AFEF21C779775006FF9A0 /* Public */,
@@ -643,6 +645,14 @@
 				5ACF2309B4502C3231BFD5CB /* Pods-推库iOS.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B603E2011EB45D630050BC36 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				B603E2021EB45DA60050BC36 /* StringDef.h */,
+			);
+			name = String;
 			sourceTree = "<group>";
 		};
 		D310E6AA13DB41176AEB2075 /* Frameworks */ = {

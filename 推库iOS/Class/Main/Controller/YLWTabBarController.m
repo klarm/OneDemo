@@ -33,19 +33,19 @@
 -(void)addChildViewControllers{
 
     YLWHomeViewController *homeVc = [[YLWHomeViewController alloc]init];
-    [self addChildViewController:homeVc WithTitle:@"文章" image:@"tab_home"];
+    [self addChildViewController:homeVc WithTitle:@"主页" image:@"tab_home"];
     
     YLWSiteViewController *site = [[YLWSiteViewController alloc]init];
-    [self addChildViewController:site WithTitle:@"站点" image:@"tab_site"];
+    [self addChildViewController:site WithTitle:@"监测" image:@"tab_site"];
     
     YLWTopicViewController *topic = [[YLWTopicViewController alloc]init];
-    [self addChildViewController:topic WithTitle:@"主题" image:@"tab_topic"];
+    [self addChildViewController:topic WithTitle:@"人员考勤" image:@"tab_topic"];
     
-    YLWWeeklyViewController *weekly = [[YLWWeeklyViewController alloc]init];
-    [self addChildViewController:weekly WithTitle:@"周刊" image:@"tab_dis"];
+//    YLWWeeklyViewController *weekly = [[YLWWeeklyViewController alloc]init];
+//    [self addChildViewController:weekly WithTitle:@"周刊" image:@"tab_dis"];
     
     YLWUserViewController *user = [[YLWUserViewController alloc]init];
-    [self addChildViewController:user WithTitle:@"我的" image:@"tab_user"];
+    [self addChildViewController:user WithTitle:@"设置" image:@"tab_user"];
 
 
 }
@@ -59,12 +59,6 @@
     
     
     YLWNavigationController *nav = [[YLWNavigationController alloc]initWithRootViewController:childController];
-//    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:childController];
-//
-//    [nav.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
-//
-//    nav.navigationBar.barTintColor = [UIColor colorWithRed:22.0/255.0 green:147.0/255.0 blue:114.0/255.0 alpha:1.0];
-    
     
     
     [self addChildViewController:nav];

@@ -14,6 +14,8 @@
 #import "YLWUserLoginController.h"
 #import "YLWUserInfoViewController.h"
 #import "YLWContentTableViewController.h"
+#import "StringDef.h"
+
 @interface YLWUserViewController ()
 
 @property (nonatomic,strong) NSArray *dataArray;
@@ -33,26 +35,21 @@
 -(NSArray *)dataArray{
 
     if (_dataArray== nil) {
-        
-        
         YLWUserItemModel *model00 = [YLWUserItemModel userItemModelWithName:@"点击登录" icon:@"default_avatar"];
         YLWUserGroupModel *group0 = [YLWUserGroupModel userGroupModelWithModelArray:@[model00]];
         
-        YLWUserItemModel *model10 = [YLWUserItemModel userItemModelWithName:@"我的待读" urlstring:@"http://api.tuicool.com/api/articles/late.json?size=200"];
-        YLWUserItemModel *model11 = [YLWUserItemModel userItemModelWithName:@"我的收藏" urlstring:@"http://api.tuicool.com/api/articles/my.json?size=30"];
-        YLWUserItemModel *model12 = [YLWUserItemModel userItemModelWithName:@"我的推刊" urlstring:@"http://api.tuicool.com/api/kans/my.json"];
-        YLWUserGroupModel *group1 = [YLWUserGroupModel userGroupModelWithModelArray:@[model10,model11,model12]];
+        YLWUserItemModel *model10 = [YLWUserItemModel userItemModelWithName:strChangePassword];
+        YLWUserItemModel *model11 = [YLWUserItemModel userItemModelWithName:strProblems];
+        YLWUserItemModel *model12 = [YLWUserItemModel userItemModelWithName:strServiceTel];
+        YLWUserItemModel *model13 = [YLWUserItemModel userItemModelWithName:strUpdate];
+        YLWUserItemModel *model14 = [YLWUserItemModel userItemModelWithName:strAboutUs];
+        YLWUserGroupModel *group1 = [YLWUserGroupModel userGroupModelWithModelArray:@[model10,model11,model12,model13,model14]];
         
-        YLWUserItemModel *model20 = [YLWUserItemModel userItemModelWithName:@"夜间模式" swich:YES];
-        YLWUserItemModel *model21 = [YLWUserItemModel userItemModelWithName:@"离线阅读"];
-        YLWUserItemModel *model22 = [YLWUserItemModel userItemModelWithName:@"相关设置"];
-        YLWUserItemModel *model23 = [YLWUserItemModel userItemModelWithName:@"意见反馈"];
-        YLWUserItemModel *model24 = [YLWUserItemModel userItemModelWithName:@"请求鼓励"];
-        YLWUserItemModel *model25 = [YLWUserItemModel userItemModelWithName:@"关于我们"];
-        YLWUserGroupModel *group2 = [YLWUserGroupModel userGroupModelWithModelArray:@[model20,model21,model22,model23,model24,model25]];
+        YLWUserItemModel *model20 = [YLWUserItemModel userItemModelWithName:strLastloginTime];
+        YLWUserItemModel *model21 = [YLWUserItemModel userItemModelWithName:strLoginOut];
+        YLWUserGroupModel *group2 = [YLWUserGroupModel userGroupModelWithModelArray:@[model20,model21]];
+        
         _dataArray = @[group0,group1,group2];
-        
-        
     }
 
     return _dataArray;
@@ -87,8 +84,6 @@
     
 }
 
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -98,8 +93,6 @@
 -(void)loginSuccess{
 
     [self.tableView reloadData];
-    
-
 }
 
 #pragma mark - Table view data source
@@ -114,7 +107,6 @@
     return [self.dataArray[section] itemModelArray].count;
 
 }
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -136,6 +128,7 @@
             
         }
         cell.itemModel = itemModel;
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         
         return cell;
     }else {
@@ -156,15 +149,13 @@
         }
         
         cell.textLabel.font = [UIFont systemFontOfSize:13];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+
         return cell;
     
     
     }
-    
-   
-    
 }
-
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 
@@ -225,49 +216,5 @@
 
 
 }
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
