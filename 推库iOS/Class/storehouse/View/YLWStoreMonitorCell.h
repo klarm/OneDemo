@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface YLWStoreMonitorCell0 : UITableViewCell
-
+- (void)setCellData:(NSDictionary*)dic;
 @end
 
 @interface YLWStoreMonitorCell1 : UITableViewCell
-
+- (void)setCellData:(NSDictionary*)dic;
 @end
 
 @interface YLWStoreMonitorSearchCell : UITableViewCell

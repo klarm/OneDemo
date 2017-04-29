@@ -32,6 +32,7 @@
     [super viewDidLoad];
     
     self.tableView.rowHeight = 73;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     [self getData];
     
@@ -56,12 +57,11 @@
     
     NSDictionary *dataDic = [NSJSONSerialization JSONObjectWithData:JSONData options:NSJSONReadingAllowFragments error:nil];
     
-    NSArray *dataArray = [dataDic objectForKey:@"stores"];
+    NSArray *dataArray = [dataDic objectForKey:self.type == 0 ? @"stores0" : @"stores1"];
     
     self.cellModelArray = dataArray;
     
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -108,6 +108,13 @@
                 cell = [[YLWStoreMonitorCell0 alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"YLWStoreMonitorCell0"];
             }
             
+            NSDictionary* dic = nil;
+            if (indexPath.row < _cellModelArray.count) {
+                dic = _cellModelArray[indexPath.row];
+            }
+            
+            [cell setCellData:dic];
+            
              return cell;
 
         }else if (self.type == 1){
@@ -116,6 +123,14 @@
             if (!cell) {
                 cell = [[YLWStoreMonitorCell1 alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"YLWStoreMonitorCell1"];
             }
+            
+            NSDictionary* dic = nil;
+            if (indexPath.row < _cellModelArray.count) {
+                dic = _cellModelArray[indexPath.row];
+            }
+            
+            [cell setCellData:dic];
+
             
             return cell;
         }

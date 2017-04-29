@@ -1,5 +1,28 @@
 {
-    "stores": [
+    "stores0": [
+        {
+            "id": "1",
+            "type": "10:30am",
+            "temHight": "1",
+            "temAvg": "小李",
+            "status": "正常"
+        },
+        {
+            "id": "2",
+            "type": "10:30am",
+            "temHight": "1",
+            "temAvg": "小李",
+            "status": "正常"
+        },
+        {
+           "id": "3",
+            "type": "10:30am",
+            "temHight": "1",
+            "temAvg": "小李",
+            "status": "正常"
+        }
+    ],
+    "stores1": [
         {
             "id": "1",
             "type": "10:30am",
@@ -8,18 +31,18 @@
             "status": "正常"
         },
         {
-               "id": "2",
-               "type": "10:30am",
-               "startTime": "1",
-               "endTime": "小李",
-               "status": "正常"
+            "id": "2",
+            "type": "10:30am",
+            "startTime": "1",
+            "endTime": "小李",
+            "status": "正常"
         },
         {
-               "id": "3",
-               "type": "10:30am",
-               "startTime": "1",
-               "endTime": "小李",
-               "status": "正常"
+            "id": "3",
+            "type": "10:30am",
+            "startTime": "1",
+            "endTime": "小李",
+            "status": "正常"
         }
     ]
 }
