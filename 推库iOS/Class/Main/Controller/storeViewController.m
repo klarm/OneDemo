@@ -81,7 +81,7 @@ static float AD_height = 150;//广告栏高度
         //定义每个UICollectionView 的大小
         flowLayout.itemSize = CGSizeMake((fDeviceWidth-20)/2, (fDeviceWidth-20)/2);
         //定义每个UICollectionView 横向的间距
-        flowLayout.minimumLineSpacing = 5;
+        flowLayout.minimumLineSpacing = 0;
         //定义每个UICollectionView 纵向的间距
         flowLayout.minimumInteritemSpacing = 0;
         //定义每个UICollectionView 的边距距

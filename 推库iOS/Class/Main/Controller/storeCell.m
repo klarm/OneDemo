@@ -15,16 +15,17 @@ Custom collection view cell for image and its label.
     self = [super initWithFrame:frame];
     if (self)
     {
-        self.imgView = [[UIImageView alloc]initWithFrame:CGRectMake(5, 5, CGRectGetWidth(self.frame)-10, CGRectGetWidth(self.frame)-10)];
+        self.imgView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 30, 40, 40)];
+        [self.imgView setCenterX:self.center.x];
         self.imgView.backgroundColor = [UIColor groupTableViewBackgroundColor];
         [self addSubview:self.imgView];
         
-        self.title = [[UILabel alloc]initWithFrame:CGRectMake(5, CGRectGetMaxY(self.imgView.frame), CGRectGetWidth(self.frame)-10, 20)];
+        self.title = [[UILabel alloc]initWithFrame:CGRectMake(5, CGRectGetMaxY(self.imgView.frame)+5, CGRectGetWidth(self.frame)-10, 20)];
         self.title.backgroundColor = [UIColor brownColor];
         self.title.textAlignment = NSTextAlignmentCenter;
         [self addSubview:self.title];
         
-        self.subTitle = [[UILabel alloc]initWithFrame:CGRectMake(5, CGRectGetMaxY(self.title.frame), CGRectGetWidth(self.frame)-10, 20)];
+        self.subTitle = [[UILabel alloc]initWithFrame:CGRectMake(5, CGRectGetMaxY(self.title.frame)+5, CGRectGetWidth(self.frame)-10, 20)];
         self.subTitle.backgroundColor = [UIColor brownColor];
         self.subTitle.textAlignment = NSTextAlignmentCenter;
         [self addSubview:self.subTitle];
@@ -41,6 +42,12 @@ Custom collection view cell for image and its label.
     self.imgView.image = [UIImage imageNamed:@"granary_circle.png"];
     self.title.text = title;
     self.subTitle.text = subTitle;
+    
+    [self.title sizeToFit];
+    [self.subTitle sizeToFit];
+    
+    [self.title setCenterX:self.center.x];
+    [self.subTitle setCenterX:self.center.x];
 }
 
 @end
