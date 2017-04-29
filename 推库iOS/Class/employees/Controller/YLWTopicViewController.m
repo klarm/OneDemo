@@ -29,7 +29,6 @@
 
 #pragma mark - 获取数据
 -(void)getSiteData{
-
     __weak typeof(self) weakself = self;
     [YLWTopicItemModel topicItemModelWithURLstring:@"http://api.tuicool.com/api/topics/user_default.json" lastArray:(NSArray *)self.itemModelArray successblock:^(NSArray *itemArray) {
        
@@ -41,8 +40,6 @@
     }];
 
 }
-
-
 
 #pragma mark - Tableview 代理和数据源方法
 
@@ -58,7 +55,6 @@
     if (cell == nil) {
         cell= [[YLWSiteItemTableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"SiteCellIdentifier"];
     }
-    
     
     YLWSiteItemModel *model = self.itemModelArray[indexPath.row];
     
@@ -81,8 +77,6 @@
     contentVc.urlstring = urlstring;
     [self.navigationController pushViewController:contentVc animated:YES];
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

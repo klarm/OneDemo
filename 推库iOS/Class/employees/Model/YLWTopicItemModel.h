@@ -7,8 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+
+
 typedef void(^SuccessBlock)(NSArray *itemArray);
 typedef void(^CompletBlock)(NSArray *itemArray ,SuccessBlock *successBlock);
+
+
 @interface YLWTopicItemModel : NSObject
 /*
  id": 10000024,
@@ -24,13 +28,19 @@ typedef void(^CompletBlock)(NSArray *itemArray ,SuccessBlock *successBlock);
 
 @property (nonatomic,copy) NSString *id;
 
+@property (nonatomic,copy) NSString *image;
+
+@property (nonatomic,copy) NSString *time;
+
+@property (nonatomic,copy) NSString *storeHouse;
+
 @property (nonatomic,copy) NSString *name;
 
-@property (nonatomic,copy) NSString *image;
+@property (nonatomic,copy) NSString *timing;
+
 
 @property (nonatomic,copy) NSString *followed;
 
-@property (nonatomic,copy) NSString *time;
 
 @property (nonatomic,copy) NSString *count;
 

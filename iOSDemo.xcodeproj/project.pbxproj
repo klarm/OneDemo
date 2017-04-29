@@ -45,7 +45,6 @@
 		B603E2371EB476E70050BC36 /* YLWSiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E22F1EB476E70050BC36 /* YLWSiteViewController.m */; };
 		B603E2381EB476E70050BC36 /* YLWSiteItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E2321EB476E70050BC36 /* YLWSiteItemModel.m */; };
 		B603E2391EB476E70050BC36 /* YLWSiteItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E2351EB476E70050BC36 /* YLWSiteItemTableViewCell.m */; };
-		B603E23A1EB476E70050BC36 /* YLWSiteItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B603E2361EB476E70050BC36 /* YLWSiteItemTableViewCell.xib */; };
 		B603E25A1EB4775A0050BC36 /* YLWBasesHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E23E1EB4775A0050BC36 /* YLWBasesHomeViewController.m */; };
 		B603E25B1EB4775A0050BC36 /* YLWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E2401EB4775A0050BC36 /* YLWHomeViewController.m */; };
 		B603E25C1EB4775A0050BC36 /* YLWSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E2421EB4775A0050BC36 /* YLWSearchViewController.m */; };
@@ -129,7 +128,6 @@
 		B603E2321EB476E70050BC36 /* YLWSiteItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWSiteItemModel.m; sourceTree = "<group>"; };
 		B603E2341EB476E70050BC36 /* YLWSiteItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWSiteItemTableViewCell.h; sourceTree = "<group>"; };
 		B603E2351EB476E70050BC36 /* YLWSiteItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWSiteItemTableViewCell.m; sourceTree = "<group>"; };
-		B603E2361EB476E70050BC36 /* YLWSiteItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLWSiteItemTableViewCell.xib; sourceTree = "<group>"; };
 		B603E23D1EB4775A0050BC36 /* YLWBasesHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWBasesHomeViewController.h; sourceTree = "<group>"; };
 		B603E23E1EB4775A0050BC36 /* YLWBasesHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWBasesHomeViewController.m; sourceTree = "<group>"; };
 		B603E23F1EB4775A0050BC36 /* YLWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWHomeViewController.h; sourceTree = "<group>"; };
@@ -283,12 +281,11 @@
 		0489AE7F1C748A8800E2998C /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				0489AE841C748A8800E2998C /* Main */,
 				B603E23B1EB4775A0050BC36 /* storehouse */,
 				B603E22C1EB476E70050BC36 /* monitor */,
 				B603E2231EB476920050BC36 /* employees */,
 				B603E2031EB474510050BC36 /* Setting */,
-				0489AE841C748A8800E2998C /* Main */,
-				04B82BA31C817E1200654527 /* 3th */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -347,14 +344,6 @@
 			);
 			name = Other;
 			path = Class;
-			sourceTree = "<group>";
-		};
-		04B82BA31C817E1200654527 /* 3th */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = 3th;
-			path = "User(我的)";
 			sourceTree = "<group>";
 		};
 		7266BC7E0ADFF0851DE8883A /* Pods */ = {
@@ -483,7 +472,6 @@
 			children = (
 				B603E2341EB476E70050BC36 /* YLWSiteItemTableViewCell.h */,
 				B603E2351EB476E70050BC36 /* YLWSiteItemTableViewCell.m */,
-				B603E2361EB476E70050BC36 /* YLWSiteItemTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -626,7 +614,6 @@
 				B603E2661EB4775A0050BC36 /* YLWNewsTableViewCell.xib in Resources */,
 				046513DE1C81600300F6E458 /* article_image.png in Resources */,
 				046FF7BC1C757CF00056977C /* titleArray.plist in Resources */,
-				B603E23A1EB476E70050BC36 /* YLWSiteItemTableViewCell.xib in Resources */,
 				04B1A2521C7CBA8900064B62 /* article_detail.html in Resources */,
 				0489AE781C74884700E2998C /* LaunchScreen.storyboard in Resources */,
 				0489AE751C74884700E2998C /* Assets.xcassets in Resources */,
