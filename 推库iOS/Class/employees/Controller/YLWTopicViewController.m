@@ -43,18 +43,6 @@ NSString * const strTiming = @"考勤";
     [self.tableView reloadData];
     
     self.tableView.tableHeaderView = self.headerView;
-    
-    
-//    __weak typeof(self) weakself = self;
-//    [YLWTopicItemModel topicItemModelWithURLstring:@"http://api.tuicool.com/api/topics/user_default.json" lastArray:(NSArray *)self.itemModelArray successblock:^(NSArray *itemArray) {
-//       
-//        weakself.itemModelArray = itemArray;
-//        
-//        [weakself.tableView reloadData];
-//        
-//        weakself.tableView.tableFooterView = weakself.footView;
-//    }];
-
 }
 
 -(UIView *)headerView{    

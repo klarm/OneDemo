@@ -6,11 +6,11 @@
 //  Copyright © 2016年 YLW. All rights reserved.
 //
 
-#import "YLWNewsTableViewCell.h"
+#import "YLWStoreMonitorCell.h"
 #import "YLWArticleModel.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 
-@interface YLWNewsTableViewCell()
+@interface YLWStoreMonitorCell()
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *feed_titleLabel;
 
@@ -20,13 +20,10 @@
 
 
 @end
-@implementation YLWNewsTableViewCell
+@implementation YLWStoreMonitorCell
 
 - (void)awakeFromNib {
     // Initialization code
-    
-    
-    
 }
 
 -(void)setArticleModel:(YLWArticleModel *)articleModel{

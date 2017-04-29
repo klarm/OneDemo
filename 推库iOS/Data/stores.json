@@ -1,0 +1,25 @@
+{
+    "stores": [
+        {
+            "id": "1",
+            "type": "10:30am",
+            "startTime": "1",
+            "endTime": "小李",
+            "status": "正常"
+        },
+        {
+               "id": "2",
+               "type": "10:30am",
+               "startTime": "1",
+               "endTime": "小李",
+               "status": "正常"
+        },
+        {
+               "id": "3",
+               "type": "10:30am",
+               "startTime": "1",
+               "endTime": "小李",
+               "status": "正常"
+        }
+    ]
+}

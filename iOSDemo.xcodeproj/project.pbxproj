@@ -56,10 +56,11 @@
 		B603E2621EB4775A0050BC36 /* YLWDetailTextModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E2501EB4775A0050BC36 /* YLWDetailTextModel.m */; };
 		B603E2631EB4775A0050BC36 /* YLWDetailTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E2521EB4775A0050BC36 /* YLWDetailTextViewController.m */; };
 		B603E2641EB4775A0050BC36 /* YLWImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E2541EB4775A0050BC36 /* YLWImageModel.m */; };
-		B603E2651EB4775A0050BC36 /* YLWNewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E2561EB4775A0050BC36 /* YLWNewsTableViewCell.m */; };
+		B603E2651EB4775A0050BC36 /* YLWStoreMonitorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E2561EB4775A0050BC36 /* YLWStoreMonitorCell.m */; };
 		B603E2671EB4775A0050BC36 /* YLWTitleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E2591EB4775A0050BC36 /* YLWTitleScrollView.m */; };
 		B603E26A1EB4811A0050BC36 /* employees.json in Resources */ = {isa = PBXBuildFile; fileRef = B603E2691EB4811A0050BC36 /* employees.json */; };
 		B603E26E1EB489C40050BC36 /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E26D1EB489C40050BC36 /* UIView+LayoutMethods.m */; };
+		B603E2701EB4B9EB0050BC36 /* stores.json in Resources */ = {isa = PBXBuildFile; fileRef = B603E26F1EB4B9EB0050BC36 /* stores.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -151,13 +152,14 @@
 		B603E2521EB4775A0050BC36 /* YLWDetailTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWDetailTextViewController.m; sourceTree = "<group>"; };
 		B603E2531EB4775A0050BC36 /* YLWImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWImageModel.h; sourceTree = "<group>"; };
 		B603E2541EB4775A0050BC36 /* YLWImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWImageModel.m; sourceTree = "<group>"; };
-		B603E2551EB4775A0050BC36 /* YLWNewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWNewsTableViewCell.h; sourceTree = "<group>"; };
-		B603E2561EB4775A0050BC36 /* YLWNewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWNewsTableViewCell.m; sourceTree = "<group>"; };
+		B603E2551EB4775A0050BC36 /* YLWStoreMonitorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWStoreMonitorCell.h; sourceTree = "<group>"; };
+		B603E2561EB4775A0050BC36 /* YLWStoreMonitorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWStoreMonitorCell.m; sourceTree = "<group>"; };
 		B603E2581EB4775A0050BC36 /* YLWTitleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWTitleScrollView.h; sourceTree = "<group>"; };
 		B603E2591EB4775A0050BC36 /* YLWTitleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWTitleScrollView.m; sourceTree = "<group>"; };
 		B603E2691EB4811A0050BC36 /* employees.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = employees.json; sourceTree = "<group>"; };
 		B603E26C1EB489C40050BC36 /* UIView+LayoutMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutMethods.h"; sourceTree = "<group>"; };
 		B603E26D1EB489C40050BC36 /* UIView+LayoutMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutMethods.m"; sourceTree = "<group>"; };
+		B603E26F1EB4B9EB0050BC36 /* stores.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stores.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -530,8 +532,8 @@
 				B603E2521EB4775A0050BC36 /* YLWDetailTextViewController.m */,
 				B603E2531EB4775A0050BC36 /* YLWImageModel.h */,
 				B603E2541EB4775A0050BC36 /* YLWImageModel.m */,
-				B603E2551EB4775A0050BC36 /* YLWNewsTableViewCell.h */,
-				B603E2561EB4775A0050BC36 /* YLWNewsTableViewCell.m */,
+				B603E2551EB4775A0050BC36 /* YLWStoreMonitorCell.h */,
+				B603E2561EB4775A0050BC36 /* YLWStoreMonitorCell.m */,
 				B603E2581EB4775A0050BC36 /* YLWTitleScrollView.h */,
 				B603E2591EB4775A0050BC36 /* YLWTitleScrollView.m */,
 			);
@@ -541,6 +543,7 @@
 		B603E2681EB4811A0050BC36 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				B603E26F1EB4B9EB0050BC36 /* stores.json */,
 				B603E2691EB4811A0050BC36 /* employees.json */,
 			);
 			path = Data;
@@ -638,6 +641,7 @@
 				04B1A2521C7CBA8900064B62 /* article_detail.html in Resources */,
 				0489AE781C74884700E2998C /* LaunchScreen.storyboard in Resources */,
 				0489AE751C74884700E2998C /* Assets.xcassets in Resources */,
+				B603E2701EB4B9EB0050BC36 /* stores.json in Resources */,
 				0422229F1C8830C10024A726 /* search.plist in Resources */,
 				B603E2221EB474510050BC36 /* YLWUserLoginCell.xib in Resources */,
 			);
@@ -715,7 +719,7 @@
 				B603E21D1EB474510050BC36 /* YLWUserGroupModel.m in Sources */,
 				048803681C7C7C8A005B51DE /* YLWConst.m in Sources */,
 				B603E2641EB4775A0050BC36 /* YLWImageModel.m in Sources */,
-				B603E2651EB4775A0050BC36 /* YLWNewsTableViewCell.m in Sources */,
+				B603E2651EB4775A0050BC36 /* YLWStoreMonitorCell.m in Sources */,
 				0464C7541C7A05690087A477 /* YLWNavigationController.m in Sources */,
 				B603E2191EB474510050BC36 /* YLWUserInfoViewController.m in Sources */,
 				B603E2391EB476E70050BC36 /* YLWSiteItemTableViewCell.m in Sources */,

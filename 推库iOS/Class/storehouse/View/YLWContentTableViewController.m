@@ -8,22 +8,22 @@
 
 #import "YLWContentTableViewController.h"
 #import "YLWArticleModel.h"
-#import "YLWNewsTableViewCell.h"
+#import "YLWStoreMonitorCell.h"
 #import "YLWDetailTextViewController.h"
 #import <Masonry.h>
 @interface YLWContentTableViewController ()
-@property (nonatomic,strong) NSMutableArray *articleModelArray;
+@property (nonatomic,strong) NSArray *cellModelArray;
 @end
 
 @implementation YLWContentTableViewController
 
 #pragma mark - 懒加载
--(NSMutableArray *)articleModelArray{
+-(NSArray *)cellModelArray{
     
-    if (_articleModelArray == nil) {
-        _articleModelArray = [[NSMutableArray alloc]init];
+    if (_cellModelArray == nil) {
+        _cellModelArray = [[NSArray alloc]init];
     }
-    return _articleModelArray;
+    return _cellModelArray;
 }
 
 #pragma mark - 视图生命周期方法
@@ -32,67 +32,14 @@
     
     self.tableView.rowHeight = 73;
     
-    
-    [self getNetWorkstate];
-    
     [self getData];
     
 }
-
--(void)getNetWorkstate{
-    
-    AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
-    
-    [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-        
-        switch (status) {
-            case AFNetworkReachabilityStatusUnknown:
-                NSLog(@"未识别的网络");
-                break;
-                
-            case AFNetworkReachabilityStatusNotReachable:{
-                NSLog(@"不可达的网络(未连接)");
-                UIAlertController *ale = [UIAlertController alertControllerWithTitle:@"网络不正常" message:@"当前无网络" preferredStyle:UIAlertControllerStyleAlert];
-                UIAlertAction *ac = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];
-                [ale addAction:ac];
-                [self presentViewController:ale animated:YES completion:nil];
-                break;}
-                
-            case AFNetworkReachabilityStatusReachableViaWWAN:
-                NSLog(@"2G,3G,4G...的网络");
-                break;
-                
-            case AFNetworkReachabilityStatusReachableViaWiFi:
-                NSLog(@"wifi的网络");
-                break;
-            default:
-                break;
-        }
-        
-        
-        
-    }];
-    [manager startMonitoring];
-    
-    
-    
-}
-
-
--(void)footGetData{
-    
-    
-}
-
 
 -(void)viewDidAppear:(BOOL)animated{
     //只是在第一次显示的时候加载  之后都是重用
     [super viewDidAppear:animated];
     NSLog(@"显示");
-    
-    
-    
-    
 }
 
 -(void)viewDidDisappear:(BOOL)animated{
@@ -104,38 +51,13 @@
 
 -(void)getData{
     
-//    __weak typeof(self) weakself = self;
-//    AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
-//    if (!manager.isReachable) {
-//        
-//        if ([self.titlename isEqualToString:@"热门"]) {
-//            
-//            [self.articleModelArray addObjectsFromArray:[YLWArticalTool Articalsback]];
-//            
-//            [self.tableView reloadData];
-//            
-//        }
-//        
-//        
-//    }else {
-//        
-//        if (!self.urlstring) {
-//            return;
-//        }
-//        [YLWArticleModel articleModelGetDataWithURLString:self.urlstring title:self.titlename parameters:nil successblack:^(NSArray *modelArray) {
-//        
-//            [weakself.articleModelArray removeAllObjects];
-//            [weakself.articleModelArray addObjectsFromArray:modelArray];
-//            
-//            [weakself.tableView reloadData];
-//            
-//            
-//            
-//        }];
-//        
-//        
-//    }
+    NSData *JSONData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"stores" ofType:@"json"]];
     
+    NSDictionary *dataDic = [NSJSONSerialization JSONObjectWithData:JSONData options:NSJSONReadingAllowFragments error:nil];
+    
+    NSArray *dataArray = [dataDic objectForKey:@"stores"];
+    
+    self.cellModelArray = dataArray;
     
 }
 
@@ -147,72 +69,57 @@
 
 #pragma mark - Table view data source
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 2;
+}
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return self.articleModelArray.count;
+    if (section == 0) {
+        return 1;
+    }else{
+        return _cellModelArray.count;
+    }
+    
+    return 1;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-//    YLWArticleModel *model = self.articleModelArray[indexPath.item];
-//    
-//    NSString *ID = @"";
-//    if (model.img.length > 0) {
-//        
-//        ID = @"YLWNewsTableViewCell";
-//        
-//    }else{
-//        
-//        ID = @"YLWNewsTableViewCell1";
-//        
-//    }
-//    YLWNewsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-//    
-//    if (cell == nil) {
-//        if ([ID isEqualToString:@"YLWNewsTableViewCell"]) {
-//            cell = [[[NSBundle mainBundle] loadNibNamed:@"YLWNewsTableViewCell" owner:nil options:nil] lastObject];
-//        }else{
-//            
-//            cell = [[[NSBundle mainBundle] loadNibNamed:@"YLWNewsTableViewCell" owner:nil options:nil] firstObject];
-//            
-//        }
-//        
-//    }
-//    
-//    
-//    cell.articleModel = model;
+    UITableViewCell* cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"123"];
     
-    //return cell;
+    cell.backgroundColor = [UIColor greenColor];
     
-    return [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"123"];
+    return cell;
 }
 
 #pragma mark 按钮的点击事件
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     
-    YLWArticleModel *model = self.articleModelArray[indexPath.row];
-    
-    
-    
-    if (self.navigationController) {
-        
-        YLWDetailTextViewController *detail = [[YLWDetailTextViewController alloc]init];
-        
-        //        detail.hidesBottomBarWhenPushed = YES;
-        
-        detail.detailTextId = model.id;
-        
-        [self.navigationController pushViewController:detail animated:YES];
-        
-        
-    }else{
-        
-        [[NSNotificationCenter defaultCenter]postNotificationName:YLWPushToDetailTextVCNotification object:nil userInfo:@{YLWDetailTextIdKeyd:model.id}];
-        
-    }
+//    YLWArticleModel *model = self.articleModelArray[indexPath.row];
+//    
+//    
+//    
+//    if (self.navigationController) {
+//        
+//        YLWDetailTextViewController *detail = [[YLWDetailTextViewController alloc]init];
+//        
+//        //        detail.hidesBottomBarWhenPushed = YES;
+//        
+//        detail.detailTextId = model.id;
+//        
+//        [self.navigationController pushViewController:detail animated:YES];
+//        
+//        
+//    }else{
+//        
+//        [[NSNotificationCenter defaultCenter]postNotificationName:YLWPushToDetailTextVCNotification object:nil userInfo:@{YLWDetailTextIdKeyd:model.id}];
+//        
+//    }
 }
 
 @end

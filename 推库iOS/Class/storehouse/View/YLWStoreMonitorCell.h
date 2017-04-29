@@ -1,5 +1,5 @@
 //
-//  YLWNewsTableViewCell.h
+//  YLWStoreMonitorCell.h
 //  推库iOS
 //
 //  Created by Mac on 16/2/18.
@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 @class YLWArticleModel;
-@interface YLWNewsTableViewCell : UITableViewCell
+
+@interface YLWStoreMonitorCell : UITableViewCell
 @property (nonatomic,strong) YLWArticleModel *articleModel;
 
 @end
