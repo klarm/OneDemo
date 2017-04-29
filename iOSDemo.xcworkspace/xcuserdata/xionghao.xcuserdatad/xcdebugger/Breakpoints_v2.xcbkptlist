@@ -56,11 +56,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x63a8;&#x5e93;iOS/Class/Main/Controller/YLWBaseSTableViewController.m"
-            timestampString = "515147860.813099"
+            timestampString = "515150109.155663"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
             landmarkName = "-getViewData"
             landmarkType = "7">
          </BreakpointContent>

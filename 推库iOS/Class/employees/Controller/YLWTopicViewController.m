@@ -11,8 +11,7 @@
 #import "YLWSiteItemTableViewCell.h"
 #import "YLWContentTableViewController.h"
 @interface YLWTopicViewController ()
-
-
+@property (nonatomic,strong) UIView *headerView;
 @end
 
 @implementation YLWTopicViewController
@@ -49,6 +48,15 @@
 //        weakself.tableView.tableFooterView = weakself.footView;
 //    }];
 
+}
+
+-(UIView *)headerView{    
+    
+    if (_headerView == nil) {
+        _headerView = [[UIView alloc]init];
+        _headerView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 44);
+    }
+    return _headerView;
 }
 
 #pragma mark - Tableview 代理和数据源方法

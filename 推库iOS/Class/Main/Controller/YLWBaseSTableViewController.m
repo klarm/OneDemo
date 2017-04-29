@@ -35,6 +35,8 @@
 
 
 -(UIButton *)footView{
+    return nil;
+    
     
     if (_footView == nil) {
         _footView = [[UIButton alloc]init];
