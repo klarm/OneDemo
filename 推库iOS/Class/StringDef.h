@@ -16,5 +16,10 @@ NSString * const strAboutUs = @"关于我们";
 NSString * const strLastloginTime = @"上次登录时间";
 NSString * const strLoginOut = @"退出登录";
 
+NSString * const strLogoImg = @"头像";
+NSString * const strTime = @"时间";
+NSString * const strHouse = @"库";
+NSString * const strName = @"姓名";
+NSString * const strTiming = @"考勤";
 
 

@@ -63,17 +63,26 @@
 
 - (void)layoutSubviews
 {
+    [self.iconImageView setX:10];
+    [self.iconImageView setCenterY:self.height/2.0];
+    
     [self.time sizeToFit];
     [self.time setX:self.iconImageView.right+10];
+    [self.time setCenterY:self.height/2.0];
     
     [self.house sizeToFit];
     [self.house setX:self.time.right+10];
     
+    [self.house setCenterY:self.height/2.0];
+    
     [self.name sizeToFit];
     [self.name setX:self.house.right+10];
     
+    [self.name setCenterY:self.height/2.0];
+    
     [self.timing sizeToFit];
     [self.timing setX:self.name.right+10];
+    [self.timing setCenterY:self.height/2.0];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

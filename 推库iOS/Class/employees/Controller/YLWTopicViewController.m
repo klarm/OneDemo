@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+     self.tableView.rowHeight = 73;
 }
 
 #pragma mark - 获取数据
@@ -35,7 +36,7 @@
     
     [self.tableView reloadData];
     
-    self.tableView.tableFooterView = self.footView;
+    //self.tableView.tableFooterView = self.footView;
     
     
 //    __weak typeof(self) weakself = self;
