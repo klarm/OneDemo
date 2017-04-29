@@ -16,7 +16,6 @@ Custom collection view cell for image and its label.
     if (self)
     {
         self.imgView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 30, 40, 40)];
-        [self.imgView setCenterX:self.center.x];
         self.imgView.backgroundColor = [UIColor groupTableViewBackgroundColor];
         [self addSubview:self.imgView];
         
@@ -48,11 +47,13 @@ Custom collection view cell for image and its label.
 
 -(void)layoutSubviews
 {
+    [self.imgView setFrame:CGRectMake((self.bounds.size.width-40)/2, 30, 40, 40)];
+    
     [self.title sizeToFit];
     [self.subTitle sizeToFit];
     
-    [self.title setCenterX:self.center.x];
-    [self.subTitle setCenterX:self.center.x];
+    [self.title setCenterX:self.imgView.centerX];
+    [self.subTitle setCenterX:self.imgView.centerX];
 }
 
 @end

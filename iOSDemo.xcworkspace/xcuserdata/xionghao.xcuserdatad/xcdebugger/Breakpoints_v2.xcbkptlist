@@ -536,11 +536,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x63a8;&#x5e93;iOS/Class/Main/Controller/storeCell.m"
-            timestampString = "515176177.333357"
+            timestampString = "515177175.666439"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "-layoutSubviews"
             landmarkType = "7">
          </BreakpointContent>
