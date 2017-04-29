@@ -42,10 +42,29 @@ static float AD_height = 150;//广告栏高度
      *  加载的数据
      */
     NSArray *imgArray = [NSArray arrayWithObjects:@"cat.png",@"cat.png",@"cat.png",@"cat.png",@"cat.png",@"cat.png", nil];
-    //[_headerView setArray:imgArray];
+
+    NSDictionary* item0 = @{
+        @"title" : @"4.3度",
+        @"subTitle" : @"1号仓库"
+    };
     
-    //collectionView数据
-    _cellArray = [imgArray mutableCopy];
+    NSDictionary* item1 = @{
+                            @"title" : @"4.5度",
+                            @"subTitle" : @"2号仓库"
+                            };
+    
+    NSDictionary* item2 = @{
+                            @"title" : @"14.5度",
+                            @"subTitle" : @"3号仓库"
+                            };
+    
+    if (!_cellArray) {
+        _cellArray = [NSMutableArray array];
+    }
+
+    [_cellArray addObject:item0];
+    [_cellArray addObject:item1];
+    [_cellArray addObject:item2];
 }
 
 #pragma mark - 创建collectionView并设置代理
@@ -105,7 +124,11 @@ static float AD_height = 150;//广告栏高度
 {
     static NSString *identify = @"storeCell";
     storeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identify forIndexPath:indexPath];
-    [cell sizeToFit];
+    
+    if (indexPath.row < _cellArray.count) {
+        NSDictionary* dic = _cellArray[indexPath.row];
+        [cell setCellData:dic];
+    }
 
     return cell;
 }

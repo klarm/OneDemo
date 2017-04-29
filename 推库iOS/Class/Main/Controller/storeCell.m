@@ -10,9 +10,9 @@ Custom collection view cell for image and its label.
 
 @implementation storeCell
 
-- (instancetype)initWithCoder:(NSCoder *)aDecoder
+- (id)initWithFrame:(CGRect)frame
 {
-    self = [super initWithCoder:aDecoder];
+    self = [super initWithFrame:frame];
     if (self)
     {
         self.imgView = [[UIImageView alloc]initWithFrame:CGRectMake(5, 5, CGRectGetWidth(self.frame)-10, CGRectGetWidth(self.frame)-10)];
@@ -29,12 +29,18 @@ Custom collection view cell for image and its label.
         self.subTitle.textAlignment = NSTextAlignmentCenter;
         [self addSubview:self.subTitle];
     }
+    
     return self;
 }
 
 -(void)setCellData:(NSDictionary*)dic
 {
-    
+    NSString* title = [dic objectForKey:@"title"];
+    NSString* subTitle = [dic objectForKey:@"subTitle"];
+
+    self.imgView.image = [UIImage imageNamed:@"granary_circle.png"];
+    self.title.text = title;
+    self.subTitle.text = subTitle;
 }
 
 @end
