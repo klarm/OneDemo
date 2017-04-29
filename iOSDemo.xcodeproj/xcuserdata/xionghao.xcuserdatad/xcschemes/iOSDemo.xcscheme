@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0489AE641C74884700E2998C"
-               BuildableName = "&#x63a8;&#x5e93;iOS.app"
-               BlueprintName = "&#x63a8;&#x5e93;iOS"
-               ReferencedContainer = "container:&#x63a8;&#x5e93;iOS.xcodeproj">
+               BuildableName = "iOSDemo.app"
+               BlueprintName = "iOSDemo"
+               ReferencedContainer = "container:iOSDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0489AE641C74884700E2998C"
-            BuildableName = "&#x63a8;&#x5e93;iOS.app"
-            BlueprintName = "&#x63a8;&#x5e93;iOS"
-            ReferencedContainer = "container:&#x63a8;&#x5e93;iOS.xcodeproj">
+            BuildableName = "iOSDemo.app"
+            BlueprintName = "iOSDemo"
+            ReferencedContainer = "container:iOSDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0489AE641C74884700E2998C"
-            BuildableName = "&#x63a8;&#x5e93;iOS.app"
-            BlueprintName = "&#x63a8;&#x5e93;iOS"
-            ReferencedContainer = "container:&#x63a8;&#x5e93;iOS.xcodeproj">
+            BuildableName = "iOSDemo.app"
+            BlueprintName = "iOSDemo"
+            ReferencedContainer = "container:iOSDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0489AE641C74884700E2998C"
-            BuildableName = "&#x63a8;&#x5e93;iOS.app"
-            BlueprintName = "&#x63a8;&#x5e93;iOS"
-            ReferencedContainer = "container:&#x63a8;&#x5e93;iOS.xcodeproj">
+            BuildableName = "iOSDemo.app"
+            BlueprintName = "iOSDemo"
+            ReferencedContainer = "container:iOSDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

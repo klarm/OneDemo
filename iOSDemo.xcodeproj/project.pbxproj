@@ -104,7 +104,7 @@
 		048803671C7C7C8A005B51DE /* YLWConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWConst.m; sourceTree = "<group>"; };
 		04889D651C8433E900834BAA /* YLWArticalTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWArticalTool.h; sourceTree = "<group>"; };
 		04889D661C8433E900834BAA /* YLWArticalTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWArticalTool.m; sourceTree = "<group>"; };
-		0489AE651C74884700E2998C /* 推库iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "推库iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0489AE651C74884700E2998C /* iOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0489AE691C74884700E2998C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0489AE6B1C74884700E2998C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../../AppDelegate.h; sourceTree = "<group>"; };
 		0489AE6C1C74884700E2998C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../../AppDelegate.m; sourceTree = "<group>"; };
@@ -316,7 +316,7 @@
 		0489AE5C1C74884700E2998C = {
 			isa = PBXGroup;
 			children = (
-				0489AE671C74884700E2998C /* 推库iOS */,
+				0489AE671C74884700E2998C /* iOSDemo */,
 				0489AE661C74884700E2998C /* Products */,
 				D310E6AA13DB41176AEB2075 /* Frameworks */,
 				7266BC7E0ADFF0851DE8883A /* Pods */,
@@ -326,12 +326,12 @@
 		0489AE661C74884700E2998C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0489AE651C74884700E2998C /* 推库iOS.app */,
+				0489AE651C74884700E2998C /* iOSDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0489AE671C74884700E2998C /* 推库iOS */ = {
+		0489AE671C74884700E2998C /* iOSDemo */ = {
 			isa = PBXGroup;
 			children = (
 				0489AE7F1C748A8800E2998C /* Class */,
@@ -339,6 +339,7 @@
 				0464C7551C7A063F0087A477 /* PrefixHeader.pch */,
 				0489AE681C74884700E2998C /* Supporting Files */,
 			);
+			name = iOSDemo;
 			path = "推库iOS";
 			sourceTree = "<group>";
 		};
@@ -661,9 +662,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0489AE641C74884700E2998C /* 推库iOS */ = {
+		0489AE641C74884700E2998C /* iOSDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0489AE7C1C74884700E2998C /* Build configuration list for PBXNativeTarget "推库iOS" */;
+			buildConfigurationList = 0489AE7C1C74884700E2998C /* Build configuration list for PBXNativeTarget "iOSDemo" */;
 			buildPhases = (
 				2451FD3D9DDDACC2365ABB6D /* [CP] Check Pods Manifest.lock */,
 				0489AE611C74884700E2998C /* Sources */,
@@ -676,9 +677,9 @@
 			);
 			dependencies = (
 			);
-			name = "推库iOS";
+			name = iOSDemo;
 			productName = "推库iOS";
-			productReference = 0489AE651C74884700E2998C /* 推库iOS.app */;
+			productReference = 0489AE651C74884700E2998C /* iOSDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -693,11 +694,11 @@
 				TargetAttributes = {
 					0489AE641C74884700E2998C = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = 7D5786K96C;
+						DevelopmentTeam = HHZ43EXLKY;
 					};
 				};
 			};
-			buildConfigurationList = 0489AE601C74884700E2998C /* Build configuration list for PBXProject "推库iOS" */;
+			buildConfigurationList = 0489AE601C74884700E2998C /* Build configuration list for PBXProject "iOSDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -710,7 +711,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0489AE641C74884700E2998C /* 推库iOS */,
+				0489AE641C74884700E2998C /* iOSDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -930,6 +931,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HHZ43EXLKY;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/推库iOS/Class/User(我的)/Support/Optional",
@@ -952,7 +954,7 @@
 					"$(PROJECT_DIR)/推库iOS/Class/User(我的)/ShareSDK/Support/PlatformSDK/WeChatSDK",
 					"$(PROJECT_DIR)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ylw.--iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.klarm.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -965,6 +967,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HHZ43EXLKY;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/推库iOS/Class/User(我的)/Support/Optional",
@@ -987,7 +990,7 @@
 					"$(PROJECT_DIR)/推库iOS/Class/User(我的)/ShareSDK/Support/PlatformSDK/WeChatSDK",
 					"$(PROJECT_DIR)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ylw.--iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.klarm.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -996,7 +999,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0489AE601C74884700E2998C /* Build configuration list for PBXProject "推库iOS" */ = {
+		0489AE601C74884700E2998C /* Build configuration list for PBXProject "iOSDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0489AE7A1C74884700E2998C /* Debug */,
@@ -1005,7 +1008,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0489AE7C1C74884700E2998C /* Build configuration list for PBXNativeTarget "推库iOS" */ = {
+		0489AE7C1C74884700E2998C /* Build configuration list for PBXNativeTarget "iOSDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0489AE7D1C74884700E2998C /* Debug */,
