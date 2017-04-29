@@ -58,6 +58,12 @@ static float AD_height = 150;//广告栏高度
                             @"subTitle" : @"3号仓库"
                             };
     
+    NSDictionary* item3 = @{
+                            @"title" : @"3.5度",
+                            @"subTitle" : @"5号仓库"
+                            };
+
+    
     if (!_cellArray) {
         _cellArray = [NSMutableArray array];
     }
@@ -65,6 +71,7 @@ static float AD_height = 150;//广告栏高度
     [_cellArray addObject:item0];
     [_cellArray addObject:item1];
     [_cellArray addObject:item2];
+    [_cellArray addObject:item3];
 }
 
 #pragma mark - 创建collectionView并设置代理
@@ -73,8 +80,6 @@ static float AD_height = 150;//广告栏高度
     if (_collectionView == nil) {
         
         UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-        
-        //flowLayout.headerReferenceSize = CGSizeMake(fDeviceWidth, AD_height+10);//头部大小
         
         _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, fDeviceWidth, fDeviceHeight) collectionViewLayout:flowLayout];
         
@@ -90,16 +95,14 @@ static float AD_height = 150;//广告栏高度
         //注册cell和ReusableView（相当于头部）
         [_collectionView registerClass:[storeCell class] forCellWithReuseIdentifier:@"storeCell"];
         
-        [_collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"ReusableView"];
-        
         //设置代理
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         
         //背景颜色
         _collectionView.backgroundColor = [UIColor whiteColor];
-        //自适应大小
-        _collectionView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        
+         _collectionView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         
     }
     return _collectionView;
@@ -124,6 +127,7 @@ static float AD_height = 150;//广告栏高度
 {
     static NSString *identify = @"storeCell";
     storeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identify forIndexPath:indexPath];
+     [cell sizeToFit];
     
     if (indexPath.row < _cellArray.count) {
         NSDictionary* dic = _cellArray[indexPath.row];

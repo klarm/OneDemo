@@ -43,6 +43,11 @@ Custom collection view cell for image and its label.
     self.title.text = title;
     self.subTitle.text = subTitle;
     
+    [self setNeedsLayout];
+}
+
+-(void)layoutSubviews
+{
     [self.title sizeToFit];
     [self.subTitle sizeToFit];
     
