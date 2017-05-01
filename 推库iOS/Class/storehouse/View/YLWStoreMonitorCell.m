@@ -11,6 +11,7 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 
 @interface YLWStoreMonitorCell0()
+@property (strong, nonatomic)  UIView *subContentView;
 
 @property (strong, nonatomic)  UILabel *ID;
 @property (strong, nonatomic)  UILabel *Type;
@@ -31,11 +32,26 @@
         _temAvg = [[UILabel alloc]initWithFrame:CGRectZero];
         _status = [[UILabel alloc]initWithFrame:CGRectZero];
         
-        [self.contentView addSubview:_ID];
-        [self.contentView addSubview:_Type];
-        [self.contentView addSubview:_temHight];
-        [self.contentView addSubview:_temAvg];
-        [self.contentView addSubview:_status];
+        _ID.textAlignment = NSTextAlignmentCenter;
+        _Type.textAlignment = NSTextAlignmentCenter;
+        _temHight.textAlignment = NSTextAlignmentCenter;
+        _temAvg.textAlignment = NSTextAlignmentCenter;
+        _status.textAlignment = NSTextAlignmentCenter;
+        
+        _subContentView = [[UIView alloc]initWithFrame:self.bounds];
+        [self.contentView addSubview:_subContentView];
+        
+        [self.subContentView addSubview:_ID];
+        [self.subContentView addSubview:_Type];
+        [self.subContentView addSubview:_temHight];
+        [self.subContentView addSubview:_temAvg];
+        [self.subContentView addSubview:_status];
+        
+        _subContentView.backgroundColor = [UIColor lightGrayColor];
+        _subContentView.clipsToBounds = YES;
+        
+        _ID.backgroundColor = [UIColor orangeColor];
+        _ID.textColor = [UIColor whiteColor];
     }
 
     return self;
@@ -58,17 +74,44 @@
 
 -(void)layoutSubviews
 {
+    [_subContentView setFrame:CGRectMake(0, 2, self.width, self.height-4)];
+    
+    CGFloat perw = (self.width - 40) / 5.0;
+    CGFloat perh = self.height;
+
+    
     [_ID sizeToFit];
     [_Type sizeToFit];
     [_temHight sizeToFit];
     [_temAvg sizeToFit];
     [_status sizeToFit];
     
+    [_ID setWidth:perw];
+    [_ID setHeight:perh];
+    
+    [_Type setWidth:perw];
+    [_Type setHeight:perh];
+
+    [_temHight setWidth:perw];
+    [_temHight setHeight:perh];
+
+    [_temAvg setWidth:perw];
+    [_temAvg setHeight:perh];
+
+    [_status setWidth:perw];
+    [_status setHeight:perh];
+
     [_ID setX:0];
     [_Type setX:_ID.right+10];
     [_temHight setX:_Type.right+10];
     [_temAvg setX:_temHight.right+10];
     [_status setX:_temAvg.right+10];
+    
+    _ID.centerY = self.subContentView.frame.size.height / 2.0;
+    _Type.centerY = _ID.centerY;
+    _temHight.centerY = _ID.centerY;
+    _temAvg.centerY = _ID.centerY;
+    _status.centerY = _ID.centerY;
 }
 
 @end
@@ -99,6 +142,9 @@
         [self.contentView addSubview:_startTime];
         [self.contentView addSubview:_endTime];
         [self.contentView addSubview:_status];
+        
+        
+        self.backgroundColor = [UIColor grayColor];
     }
     
     return self;
@@ -150,10 +196,18 @@
     
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         
+        self.contentView.backgroundColor = [UIColor whiteColor];
+        
         UISearchBar *search = [[UISearchBar alloc]init];
-        search.placeholder = @"请输入搜索";
+        search.placeholder = @"请输入搜索内容";
+        
+        //search.barTintColor = [UIColor whiteColor] ;
         
         self.search = search;
+
+        
+        self.search.backgroundColor = [UIColor whiteColor];
+        
         
         [self.contentView addSubview:search];
         
@@ -165,6 +219,8 @@
 -(void)layoutSubviews
 {
     [self.search setFrame:self.bounds];
+    
+    [self.search setFrame:CGRectMake(30, 5, self.width-60, self.height-10)];
 }
 
 @end

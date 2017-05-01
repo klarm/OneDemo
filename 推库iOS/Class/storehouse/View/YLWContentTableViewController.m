@@ -32,7 +32,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.tableView.rowHeight = 73;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     
@@ -107,7 +106,7 @@
          return self.tableView.frame.size.height;
      }
      else{
-         return 73;
+         return 50;
      }
 }
 
