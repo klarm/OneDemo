@@ -117,7 +117,7 @@
 @end
 
 @interface YLWStoreMonitorCell1()
-
+@property (strong, nonatomic)  UIView  *subContentView;
 @property (strong, nonatomic)  UILabel *ID;
 @property (strong, nonatomic)  UILabel *Type;
 @property (strong, nonatomic)  UILabel *startTime;
@@ -137,14 +137,26 @@
         _endTime = [[UILabel alloc]initWithFrame:CGRectZero];
         _status = [[UILabel alloc]initWithFrame:CGRectZero];
         
-        [self.contentView addSubview:_ID];
-        [self.contentView addSubview:_Type];
-        [self.contentView addSubview:_startTime];
-        [self.contentView addSubview:_endTime];
-        [self.contentView addSubview:_status];
+        _ID.textAlignment = NSTextAlignmentCenter;
+        _Type.textAlignment = NSTextAlignmentCenter;
+        _startTime.textAlignment = NSTextAlignmentCenter;
+        _endTime.textAlignment = NSTextAlignmentCenter;
+        _status.textAlignment = NSTextAlignmentCenter;
         
+        _subContentView = [[UIView alloc]initWithFrame:self.bounds];
+        [self.contentView addSubview:_subContentView];
         
-        self.backgroundColor = [UIColor grayColor];
+        [self.subContentView addSubview:_ID];
+        [self.subContentView addSubview:_Type];
+        [self.subContentView addSubview:_startTime];
+        [self.subContentView addSubview:_endTime];
+        [self.subContentView addSubview:_status];
+        
+        _subContentView.backgroundColor = [UIColor lightGrayColor];
+        _subContentView.clipsToBounds = YES;
+        
+        _ID.backgroundColor = [UIColor orangeColor];
+        _ID.textColor = [UIColor whiteColor];
     }
     
     return self;
@@ -163,22 +175,54 @@
     _startTime.text = startTime;
     _endTime.text = endTime;
     _status.text = status;
-
 }
 
 -(void)layoutSubviews
 {
+    [_subContentView setFrame:CGRectMake(0, 2, self.width, self.height-4)];
+
     [_ID sizeToFit];
     [_Type sizeToFit];
     [_startTime sizeToFit];
     [_endTime sizeToFit];
     [_status sizeToFit];
     
+    CGFloat perw = (self.width - 40) / 5.0;
+    CGFloat perh = self.height;
+    
+    
+    [_ID sizeToFit];
+    [_Type sizeToFit];
+    [_startTime sizeToFit];
+    [_endTime sizeToFit];
+    [_status sizeToFit];
+    
+    [_ID setWidth:perw];
+    [_ID setHeight:perh];
+    
+    [_Type setWidth:perw];
+    [_Type setHeight:perh];
+    
+    [_startTime setWidth:perw];
+    [_startTime setHeight:perh];
+    
+    [_endTime setWidth:perw];
+    [_endTime setHeight:perh];
+    
+    [_status setWidth:perw];
+    [_status setHeight:perh];
+    
     [_ID setX:0];
     [_Type setX:_ID.right+10];
     [_startTime setX:_Type.right+10];
     [_endTime setX:_startTime.right+10];
     [_status setX:_endTime.right+10];
+    
+    _ID.centerY = self.subContentView.frame.size.height / 2.0;
+    _Type.centerY = _ID.centerY;
+    _startTime.centerY = _ID.centerY;
+    _endTime.centerY = _ID.centerY;
+    _status.centerY = _ID.centerY;
 }
 
 @end

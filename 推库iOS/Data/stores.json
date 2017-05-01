@@ -2,47 +2,47 @@
     "stores0": [
         {
             "id": "1",
-            "type": "10:30am",
-            "temHight": "1",
-            "temAvg": "小李",
+            "type": "平仓房",
+            "temHight": "4.3度",
+            "temAvg": "-4.5度",
             "status": "正常"
         },
         {
             "id": "2",
-            "type": "10:30am",
-            "temHight": "1",
-            "temAvg": "小李",
+            "type": "平仓房",
+            "temHight": "4.3度",
+            "temAvg": "-4.5度",
             "status": "正常"
         },
         {
            "id": "3",
-            "type": "10:30am",
-            "temHight": "1",
-            "temAvg": "小李",
+            "type": "平仓房",
+            "temHight": "4.3度",
+            "temAvg": "-4.5度",
             "status": "正常"
         }
     ],
     "stores1": [
         {
             "id": "1",
-            "type": "10:30am",
-            "startTime": "1",
-            "endTime": "小李",
-            "status": "正常"
+            "type": "平仓房",
+                "startTime": "10:30am",
+                "endTime": "0:30pm",
+            "status": "未通风"
         },
         {
             "id": "2",
-            "type": "10:30am",
-            "startTime": "1",
-            "endTime": "小李",
-            "status": "正常"
+            "type": "平仓房",
+            "startTime": "10:30am",
+            "endTime": "0:30pm",
+            "status": "通风中"
         },
         {
             "id": "3",
-            "type": "10:30am",
-            "startTime": "1",
-            "endTime": "小李",
-            "status": "正常"
+            "type": "平仓房",
+                "startTime": "10:30am",
+                "endTime": "0:30pm",
+            "status": "未通风"
         }
     ]
 }

@@ -13,7 +13,7 @@
 #import "YLWDetailTextViewController.h"
 #import <Masonry.h>
 @interface YLWContentTableViewController ()
-@property (nonatomic,assign) NSInteger type;
+//@property (nonatomic,assign) NSInteger type;
 @property (nonatomic,strong) NSArray *cellModelArray;
 @end
 
@@ -63,7 +63,7 @@
     
     NSDictionary *dataDic = [NSJSONSerialization JSONObjectWithData:JSONData options:NSJSONReadingAllowFragments error:nil];
     
-    NSArray *dataArray = [dataDic objectForKey:self.type == 0 ? @"stores0" : @"stores1"];
+    NSArray *dataArray = [dataDic objectForKey:self.myIndex == 0 ? @"stores0" : @"stores1"];
     
     self.cellModelArray = dataArray;
     
@@ -174,7 +174,7 @@
         }
         
         if (indexPath.section == 1) {
-            if (self.type == 0) {
+            if (self.myIndex == 0) {
                 YLWStoreMonitorCell0 *cell = [tableView dequeueReusableCellWithIdentifier:@"YLWStoreMonitorCell0"];
                 
                 if (!cell) {
@@ -190,7 +190,7 @@
                 
                 return cell;
                 
-            }else if (self.type == 1){
+            }else if (self.myIndex == 1){
                 YLWStoreMonitorCell1 *cell = [tableView dequeueReusableCellWithIdentifier:@"YLWStoreMonitorCell1"];
                 
                 if (!cell) {
