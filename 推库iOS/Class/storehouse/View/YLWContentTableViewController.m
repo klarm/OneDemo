@@ -34,6 +34,12 @@
     self.tableView.rowHeight = 73;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
+    
+    self.navigationItem.leftBarButtonItem = nil;
+    
+    [self.navigationController.navigationBar setBarTintColor:[UIColor orangeColor]];
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,[UIFont boldSystemFontOfSize:20.0f],NSFontAttributeName, nil]];
+    
     [self getData];
     
 }

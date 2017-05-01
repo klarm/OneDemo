@@ -27,6 +27,7 @@ NSString * const strMyMainPage = @"主页";
     //导航栏背景颜色
     [self.navigationController.navigationBar setBarTintColor:[UIColor orangeColor]];
     [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,[UIFont boldSystemFontOfSize:20.0f],NSFontAttributeName, nil]];
+    
     self.navigationItem.leftBarButtonItem = nil;
     self.navigationItem.title = strMyMainPage;
     
