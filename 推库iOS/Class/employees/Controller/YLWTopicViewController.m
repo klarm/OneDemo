@@ -33,8 +33,11 @@ NSString * const strTiming = @"考勤";
     [self.navigationController.navigationBar setBarTintColor:[UIColor orangeColor]];
     [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,[UIFont boldSystemFontOfSize:20.0f],NSFontAttributeName, nil]];
     
+    self.navigationItem.leftBarButtonItem = nil;
+    self.navigationItem.rightBarButtonItem = nil;
     
-     self.tableView.rowHeight = 73;
+    
+     self.tableView.rowHeight = 50;
 }
 
 #pragma mark - 获取数据
@@ -59,8 +62,11 @@ NSString * const strTiming = @"考勤";
         _headerView = [[UIView alloc]init];
         _headerView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 44);
         
+        _headerView.backgroundColor = [UIColor lightGrayColor];
+        
+        CGFloat perw = ([UIScreen mainScreen].bounds.size.width) / 5.0;
+        
         UILabel* img = [[UILabel alloc]initWithFrame:CGRectZero];
-        img.backgroundColor = [UIColor grayColor];
         img.text = strLogoImg;
         [_headerView addSubview:img];
         
@@ -85,25 +91,37 @@ NSString * const strTiming = @"考勤";
         [_headerView addSubview:timing];
         
         [img sizeToFit];
-        [img setX:10];
+        [img setX:0];
         [img setCenterY:_headerView.height/2.0];
         
         [time sizeToFit];
-        [time setX:img.right+10];
         [time setCenterY:_headerView.height/2.0];
         
         [house sizeToFit];
-        [house setX:time.right+10];
         [house setCenterY:_headerView.height/2.0];
         
         [name sizeToFit];
-        [name setX:house.right+10];
         [name setCenterY:_headerView.height/2.0];
         
         [timing sizeToFit];
-        [timing setX:name.right+10];
         [timing setCenterY:_headerView.height/2.0];
+        
+        img.textAlignment = NSTextAlignmentCenter;
+        time.textAlignment = NSTextAlignmentCenter;
+        house.textAlignment = NSTextAlignmentCenter;
+        name.textAlignment = NSTextAlignmentCenter;
+        timing.textAlignment = NSTextAlignmentCenter;
 
+        [img setWidth:perw];
+        [time setWidth:perw];
+        [house setWidth:perw];
+        [name setWidth:perw];
+        [timing setWidth:perw];
+        
+        [time setX:img.right];
+        [house setX:time.right];
+        [name setX:house.right];
+        [timing setX:name.right];
     }
     return _headerView;
 }

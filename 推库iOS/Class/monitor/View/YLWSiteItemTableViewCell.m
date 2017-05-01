@@ -26,7 +26,7 @@
 
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         
-        self.iconImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 25, 25)];
+        self.iconImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 35, 35)];
         self.iconImageView.layer.cornerRadius = 12;
         self.iconImageView.layer.masksToBounds = YES;
         self.iconImageView.layer.borderWidth = 1;
@@ -35,15 +35,19 @@
         
         self.time = [[UILabel alloc]initWithFrame:CGRectZero];
         [self.contentView addSubview:self.time];
+        self.time.textAlignment = NSTextAlignmentCenter;
 
         self.house = [[UILabel alloc]initWithFrame:CGRectZero];
         [self.contentView addSubview:self.house];
+        self.house.textAlignment = NSTextAlignmentCenter;
 
         self.name = [[UILabel alloc]initWithFrame:CGRectZero];
         [self.contentView addSubview:self.name];
+        self.name.textAlignment = NSTextAlignmentCenter;
 
         self.timing = [[UILabel alloc]initWithFrame:CGRectZero];
         [self.contentView addSubview:self.timing];
+        self.timing.textAlignment = NSTextAlignmentCenter;
     }
     return self;
 }
@@ -66,21 +70,25 @@
     [self.iconImageView setX:10];
     [self.iconImageView setCenterY:self.height/2.0];
     
+    CGFloat perwidht = (self.width - self.iconImageView.right - 40)/4;
+    
     [self.time sizeToFit];
+    [self.time setWidth:perwidht];
     [self.time setX:self.iconImageView.right+10];
     [self.time setCenterY:self.height/2.0];
     
     [self.house sizeToFit];
+    [self.house setWidth:perwidht];
     [self.house setX:self.time.right+10];
-    
     [self.house setCenterY:self.height/2.0];
     
     [self.name sizeToFit];
+    [self.name setWidth:perwidht];
     [self.name setX:self.house.right+10];
-    
     [self.name setCenterY:self.height/2.0];
     
     [self.timing sizeToFit];
+    [self.timing setWidth:perwidht];
     [self.timing setX:self.name.right+10];
     [self.timing setCenterY:self.height/2.0];
 }

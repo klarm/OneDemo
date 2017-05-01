@@ -3,21 +3,21 @@
         {
             "image": "",
             "time": "10:30am",
-            "house": "1",
+            "house": "库1",
             "name": "小李",
             "timing": "正常"
         },
         {
             "image": "",
             "time": "10:30am",
-            "house": "1",
+            "house": "库2",
             "name": "小王",
             "timing": "正常"
         },
         {
             "image": "",
             "time": "10:30am",
-            "house": "1",
+            "house": "库3",
             "name": "小张",
             "timing": "正常"
         }
