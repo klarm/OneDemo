@@ -27,7 +27,7 @@
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         
         self.iconImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 35, 35)];
-        self.iconImageView.layer.cornerRadius = 12;
+        self.iconImageView.layer.cornerRadius = 16;
         self.iconImageView.layer.masksToBounds = YES;
         self.iconImageView.layer.borderWidth = 1;
         self.iconImageView.layer.borderColor = [UIColor colorWithRed:211 / 255.0 green:211 / 255.0 blue:211 / 255.0 alpha:1].CGColor;
@@ -56,8 +56,10 @@
 
     _siteItemModel = siteItemModel;
     
-    [self.iconImageView sd_setImageWithURL:[NSURL URLWithString:siteItemModel.image] placeholderImage:[UIImage imageNamed:@"abs_pic"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-    }];
+//    [self.iconImageView sd_setImageWithURL:[NSURL URLWithString:siteItemModel.image] placeholderImage:[UIImage imageNamed:@"abs_pic"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+//    }];
+    
+    self.iconImageView.image = [UIImage imageNamed:@"avatar1.png"];
     
     self.time.text = siteItemModel.time;
     self.house.text = siteItemModel.house;

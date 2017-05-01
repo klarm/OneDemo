@@ -106,6 +106,8 @@
 		B649981A1EB765490028FB26 /* storeInfo1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64998161EB765490028FB26 /* storeInfo1.jpg */; };
 		B649981B1EB765490028FB26 /* storeInfo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64998171EB765490028FB26 /* storeInfo2.jpg */; };
 		B649981C1EB765490028FB26 /* storeInfo3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64998181EB765490028FB26 /* storeInfo3.jpg */; };
+		B64998241EB790920028FB26 /* YLWStoreMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64998231EB790920028FB26 /* YLWStoreMapController.m */; };
+		B64998261EB790BE0028FB26 /* storemap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64998251EB790BE0028FB26 /* storemap.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -253,6 +255,9 @@
 		B64998161EB765490028FB26 /* storeInfo1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = storeInfo1.jpg; sourceTree = "<group>"; };
 		B64998171EB765490028FB26 /* storeInfo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = storeInfo2.jpg; sourceTree = "<group>"; };
 		B64998181EB765490028FB26 /* storeInfo3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = storeInfo3.jpg; sourceTree = "<group>"; };
+		B64998221EB790920028FB26 /* YLWStoreMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWStoreMapController.h; sourceTree = "<group>"; };
+		B64998231EB790920028FB26 /* YLWStoreMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWStoreMapController.m; sourceTree = "<group>"; };
+		B64998251EB790BE0028FB26 /* storemap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = storemap.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -485,6 +490,8 @@
 				B603E2061EB474510050BC36 /* YLWUserInfoViewController.m */,
 				B603E2071EB474510050BC36 /* YLWUserLoginController.h */,
 				B603E2081EB474510050BC36 /* YLWUserLoginController.m */,
+				B64998221EB790920028FB26 /* YLWStoreMapController.h */,
+				B64998231EB790920028FB26 /* YLWStoreMapController.m */,
 				B603E20A1EB474510050BC36 /* YLWUserViewController.h */,
 				B603E20B1EB474510050BC36 /* YLWUserViewController.m */,
 			);
@@ -661,6 +668,7 @@
 		B64997C11EB4F2720028FB26 /* drawable */ = {
 			isa = PBXGroup;
 			children = (
+				B64998251EB790BE0028FB26 /* storemap.jpg */,
 				B64997C21EB4F2720028FB26 /* avatar1.png */,
 				B64997C31EB4F2720028FB26 /* avatar10.png */,
 				B64997C41EB4F2720028FB26 /* avatar11.png */,
@@ -800,6 +808,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B649980F1EB73E530028FB26 /* storeInforArray.plist in Resources */,
+				B64998261EB790BE0028FB26 /* storemap.jpg in Resources */,
 				B64997FF1EB4F2720028FB26 /* granary_default.png in Resources */,
 				B649980B1EB4F2720028FB26 /* icon_warning.png in Resources */,
 				B64997F81EB4F2720028FB26 /* btn_go2.png in Resources */,
@@ -945,6 +954,7 @@
 				B603E2671EB4775A0050BC36 /* YLWTitleScrollView.m in Sources */,
 				B64997431EB4E8AD0028FB26 /* storeViewController.m in Sources */,
 				B603E22A1EB476920050BC36 /* YLWTopicViewController.m in Sources */,
+				B64998241EB790920028FB26 /* YLWStoreMapController.m in Sources */,
 				0489AE6A1C74884700E2998C /* main.m in Sources */,
 				B649973F1EB4E0BF0028FB26 /* storeCell.m in Sources */,
 				B603E21E1EB474510050BC36 /* YLWUserItemModel.m in Sources */,

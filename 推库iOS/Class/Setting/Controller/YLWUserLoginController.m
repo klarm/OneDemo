@@ -8,6 +8,8 @@
 
 #import "YLWUserLoginController.h"
 #import <Masonry.h>
+#import "YLWStoreMapController.h"
+
 @interface YLWUserLoginController ()
 
 @property (strong, nonatomic)  UITextField *emailTextField;
@@ -105,6 +107,8 @@
         [_login setTitle:@"登录" forState:UIControlStateNormal];
         [_login setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [self.view addSubview:_login];
+        
+          [_login addTarget:self action:@selector(mylogin) forControlEvents:UIControlEventTouchUpInside];
 
     }
     
@@ -116,6 +120,12 @@
     
     return self;
 
+}
+
+-(void)mylogin{
+    YLWStoreMapController* vc = [[YLWStoreMapController alloc]init];
+    
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (void)viewDidLoad {
