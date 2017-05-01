@@ -178,6 +178,8 @@
 #pragma mark - 选中cell进行跳转
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return;
 
     YLWUserGroupModel *group = self.dataArray[indexPath.section];
     YLWUserItemModel *itemModel = group.itemModelArray[indexPath.row];

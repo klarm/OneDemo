@@ -10,15 +10,13 @@
 #import <Masonry.h>
 @interface YLWUserLoginController ()
 
-@property (weak, nonatomic) IBOutlet UIImageView *logoImage;
-@property (weak, nonatomic) IBOutlet UITextField *emailTextField;
-@property (weak, nonatomic) IBOutlet UITextField *passWordTextField;
+@property (strong, nonatomic)  UITextField *emailTextField;
+@property (strong, nonatomic)  UITextField *passWordTextField;
+@property (strong, nonatomic)  UIButton *login;
+@property (strong, nonatomic)  UIImageView *bk;
 
 @property (nonatomic,strong) UIView *errorLoginView;
-
 @property (nonatomic,strong) UILabel *errorTextLabel;
-
-@property (nonatomic,strong) MASConstraint *topConstraint;
 
 @end
 
@@ -63,17 +61,17 @@
 
     if (_errorLoginView == nil) {
         _errorLoginView = [[UIView alloc]init];
-        _errorLoginView.backgroundColor = [UIColor colorWithRed:247 / 255.0 green:151 / 255.0 blue:40 / 255.0 alpha:1];
-        
-        [self.navigationController.view addSubview:_errorLoginView];
-        
-        [_errorLoginView mas_makeConstraints:^(MASConstraintMaker *make) {
-            
-            self.topConstraint =  make.top.equalTo(self.navigationController.view.mas_top).with.offset(-95);
-            make.right.left.equalTo(self.navigationController.view);
-            make.height.mas_equalTo(95);
-            
-        }];
+//        _errorLoginView.backgroundColor = [UIColor colorWithRed:247 / 255.0 green:151 / 255.0 blue:40 / 255.0 alpha:1];
+//        
+//        [self.navigationController.view addSubview:_errorLoginView];
+//        
+//        [_errorLoginView mas_makeConstraints:^(MASConstraintMaker *make) {
+//            
+//            self.topConstraint =  make.top.equalTo(self.navigationController.view.mas_top).with.offset(-95);
+//            make.right.left.equalTo(self.navigationController.view);
+//            make.height.mas_equalTo(95);
+//            
+//        }];
         
     }
     return _errorLoginView;
@@ -83,10 +81,39 @@
 -(instancetype)init{
 
     if (self = [super init]) {
+        _bk = [[UIImageView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+        [self.view addSubview:_bk];
+
         
-        UIStoryboard *story = [UIStoryboard storyboardWithName:@"YLWUserLoginController" bundle:nil];
-        self = [story instantiateInitialViewController];
+        _emailTextField = [[UITextField alloc]initWithFrame:CGRectMake(0, 200, 200, 40)];
+        _emailTextField.backgroundColor = [UIColor whiteColor];
+        _emailTextField.placeholder = @"用户名：";
+        
+        _passWordTextField = [[UITextField alloc]initWithFrame:CGRectMake(0, _emailTextField.bottom+20, 200, 40)];
+        _passWordTextField.backgroundColor = [UIColor whiteColor];
+         _passWordTextField.placeholder = @"密码：";
+
+        [_emailTextField setCenterX:self.view.width/2.0];
+        [_passWordTextField setCenterX:self.view.width/2.0];
+        
+        [self.view addSubview:_emailTextField];
+        [self.view addSubview:_passWordTextField];
+        
+        
+        _login = [[UIButton alloc]initWithFrame:CGRectMake(_emailTextField.x, _passWordTextField.bottom+20, 200, 40)];
+        _login.backgroundColor = [UIColor whiteColor];
+        [_login setTitle:@"登录" forState:UIControlStateNormal];
+        [_login setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [self.view addSubview:_login];
+
     }
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    self.bk.contentMode =UIViewContentModeScaleToFill;
+    id d = [UIImage imageNamed:@"splash.jpg"];
+    self.bk.image = d;
+    
     return self;
 
 }
@@ -94,8 +121,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    [self makeCircleWithview:self.logoImage];
     [self setNav];
     
     self.errorTextLabel.text = @"";
@@ -162,11 +187,11 @@
             
             self.errorTextLabel.text = resultString;
             
-            [self.topConstraint uninstall];
+            //[self.topConstraint uninstall];
             
             [self.errorLoginView mas_updateConstraints:^(MASConstraintMaker *make) {
                 
-                self.topConstraint = make.top.equalTo(self.navigationController.view.mas_top);
+                //self.topConstraint = make.top.equalTo(self.navigationController.view.mas_top);
                 
             }];
             
@@ -178,10 +203,10 @@
                 
             } completion:^(BOOL finished) {
 //                [self.errorLoginView removeFromSuperview];
-                [self.topConstraint uninstall];
+                //[self.topConstraint uninstall];
                 [self.errorLoginView mas_updateConstraints:^(MASConstraintMaker *make) {
                     
-                    self.topConstraint = make.top.equalTo(self.navigationController.view.mas_top).with.offset(-95);
+                    //self.topConstraint = make.top.equalTo(self.navigationController.view.mas_top).with.offset(-95);
                     
                 }];
                 

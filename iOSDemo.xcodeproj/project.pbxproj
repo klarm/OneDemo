@@ -32,7 +32,6 @@
 		99EBBEC8622C1438D6D909F7 /* libPods-推库iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89057CC06682018B56AEE676 /* libPods-推库iOS.a */; };
 		B603E2191EB474510050BC36 /* YLWUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E2061EB474510050BC36 /* YLWUserInfoViewController.m */; };
 		B603E21A1EB474510050BC36 /* YLWUserLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E2081EB474510050BC36 /* YLWUserLoginController.m */; };
-		B603E21B1EB474510050BC36 /* YLWUserLoginController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B603E2091EB474510050BC36 /* YLWUserLoginController.storyboard */; };
 		B603E21C1EB474510050BC36 /* YLWUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E20B1EB474510050BC36 /* YLWUserViewController.m */; };
 		B603E21D1EB474510050BC36 /* YLWUserGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E20E1EB474510050BC36 /* YLWUserGroupModel.m */; };
 		B603E21E1EB474510050BC36 /* YLWUserItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B603E2101EB474510050BC36 /* YLWUserItemModel.m */; };
@@ -152,7 +151,6 @@
 		B603E2061EB474510050BC36 /* YLWUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWUserInfoViewController.m; sourceTree = "<group>"; };
 		B603E2071EB474510050BC36 /* YLWUserLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWUserLoginController.h; sourceTree = "<group>"; };
 		B603E2081EB474510050BC36 /* YLWUserLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWUserLoginController.m; sourceTree = "<group>"; };
-		B603E2091EB474510050BC36 /* YLWUserLoginController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YLWUserLoginController.storyboard; sourceTree = "<group>"; };
 		B603E20A1EB474510050BC36 /* YLWUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWUserViewController.h; sourceTree = "<group>"; };
 		B603E20B1EB474510050BC36 /* YLWUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWUserViewController.m; sourceTree = "<group>"; };
 		B603E20D1EB474510050BC36 /* YLWUserGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWUserGroupModel.h; sourceTree = "<group>"; };
@@ -487,7 +485,6 @@
 				B603E2061EB474510050BC36 /* YLWUserInfoViewController.m */,
 				B603E2071EB474510050BC36 /* YLWUserLoginController.h */,
 				B603E2081EB474510050BC36 /* YLWUserLoginController.m */,
-				B603E2091EB474510050BC36 /* YLWUserLoginController.storyboard */,
 				B603E20A1EB474510050BC36 /* YLWUserViewController.h */,
 				B603E20B1EB474510050BC36 /* YLWUserViewController.m */,
 			);
@@ -809,7 +806,6 @@
 				B64997F41EB4F2720028FB26 /* avatar_border.png in Resources */,
 				B64997ED1EB4F2720028FB26 /* avatar3.png in Resources */,
 				B64998001EB4F2720028FB26 /* granary_rectangle.png in Resources */,
-				B603E21B1EB474510050BC36 /* YLWUserLoginController.storyboard in Resources */,
 				B64997EA1EB4F2720028FB26 /* avatar11.png in Resources */,
 				B64997EE1EB4F2720028FB26 /* avatar4.png in Resources */,
 				B64997F31EB4F2720028FB26 /* avatar9.png in Resources */,

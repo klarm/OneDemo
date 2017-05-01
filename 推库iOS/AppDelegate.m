@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "YLWTabBarController.h"
-
+#import "YLWUserLoginController.h"
 
 
 
@@ -24,24 +24,31 @@
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
-    YLWTabBarController *tabbarVC = [[YLWTabBarController alloc]init];
     
-    self.window.rootViewController = tabbarVC;
-    
+    //
+    YLWUserLoginController *login = [[YLWUserLoginController alloc]init];
+    self.window.rootViewController = login;
     [self.window makeKeyAndVisible];
     
-    [UITabBar appearance].tintColor = [UIColor orangeColor];
     
-    [UINavigationBar appearance].tintColor = [UIColor whiteColor];
-    
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    
-    if ([YLWUserLoginModel sharedUserLoginModel].isLogin) {
-        NSLog(@"登录");
-    }else{
-    
-        NSLog(@"没有登录");
-    }
+//    YLWTabBarController *tabbarVC = [[YLWTabBarController alloc]init];
+//    
+//    self.window.rootViewController = tabbarVC;
+//    
+//    [self.window makeKeyAndVisible];
+//    
+//    [UITabBar appearance].tintColor = [UIColor orangeColor];
+//    
+//    [UINavigationBar appearance].tintColor = [UIColor whiteColor];
+//    
+//    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+//    
+//    if ([YLWUserLoginModel sharedUserLoginModel].isLogin) {
+//        NSLog(@"登录");
+//    }else{
+//    
+//        NSLog(@"没有登录");
+//    }
     
     
     
