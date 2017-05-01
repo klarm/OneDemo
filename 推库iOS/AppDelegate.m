@@ -30,7 +30,7 @@
     
     [self.window makeKeyAndVisible];
     
-    [UITabBar appearance].tintColor = [UIColor colorWithRed:22.0/255.0 green:147.0/255.0 blue:114.0/255.0 alpha:1.0];
+    [UITabBar appearance].tintColor = [UIColor orangeColor];
     
     [UINavigationBar appearance].tintColor = [UIColor whiteColor];
     
