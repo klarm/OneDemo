@@ -101,6 +101,7 @@
 		B649980B1EB4F2720028FB26 /* icon_warning.png in Resources */ = {isa = PBXBuildFile; fileRef = B64997E51EB4F2720028FB26 /* icon_warning.png */; };
 		B649980C1EB4F2720028FB26 /* icon_warning_info.png in Resources */ = {isa = PBXBuildFile; fileRef = B64997E61EB4F2720028FB26 /* icon_warning_info.png */; };
 		B649980D1EB4F2720028FB26 /* splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64997E71EB4F2720028FB26 /* splash.jpg */; };
+		B649980F1EB73E530028FB26 /* storeInforArray.plist in Resources */ = {isa = PBXBuildFile; fileRef = B649980E1EB73E530028FB26 /* storeInforArray.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -242,6 +243,7 @@
 		B64997E51EB4F2720028FB26 /* icon_warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_warning.png; sourceTree = "<group>"; };
 		B64997E61EB4F2720028FB26 /* icon_warning_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_warning_info.png; sourceTree = "<group>"; };
 		B64997E71EB4F2720028FB26 /* splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = splash.jpg; sourceTree = "<group>"; };
+		B649980E1EB73E530028FB26 /* storeInforArray.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = storeInforArray.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +285,7 @@
 		0476EBD81C78A6DA007B0523 /* Plist */ = {
 			isa = PBXGroup;
 			children = (
+				B649980E1EB73E530028FB26 /* storeInforArray.plist */,
 				046FF7BB1C757CF00056977C /* titleArray.plist */,
 				0422229E1C8830C10024A726 /* search.plist */,
 			);
@@ -766,6 +769,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B649980F1EB73E530028FB26 /* storeInforArray.plist in Resources */,
 				B64997FF1EB4F2720028FB26 /* granary_default.png in Resources */,
 				B649980B1EB4F2720028FB26 /* icon_warning.png in Resources */,
 				B64997F81EB4F2720028FB26 /* btn_go2.png in Resources */,

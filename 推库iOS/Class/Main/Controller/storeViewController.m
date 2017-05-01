@@ -8,6 +8,7 @@
 
 #import "storeViewController.h"
 #import "storeCell.h"
+#import "YLWHomeViewController.h"
 
 NSString * const strMyMainPage = @"主页";
 
@@ -145,6 +146,12 @@ NSString * const strMyMainPage = @"主页";
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"选择%ld",indexPath.item);
+    
+    YLWHomeViewController* contentVc = [[YLWHomeViewController alloc]init];
+    contentVc.dataSourceType = 1;
+    
+    [self.navigationController pushViewController:contentVc animated:YES];
+
 }
 
 - (void)didReceiveMemoryWarning {

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>仓房信息</string>
+		<key>cid</key>
+		<string>0</string>
+		<key>urlstring</key>
+		<string>http://api.tuicool.com/api/articles/hot.json?cid=0&amp;size=30</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>温度表格</string>
+		<key>cid</key>
+		<string>0</string>
+		<key>urlstring</key>
+		<string>http://api.tuicool.com/api/articles/hot.json?cid=0&amp;size=30</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>温度曲线</string>
+		<key>cid</key>
+		<string>0</string>
+		<key>urlstring</key>
+		<string>http://api.tuicool.com/api/articles/hot.json?cid=0&amp;size=30</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>智能控制</string>
+		<key>cid</key>
+		<string>0</string>
+		<key>urlstring</key>
+		<string>http://api.tuicool.com/api/articles/hot.json?cid=0&amp;size=30</string>
+	</dict>
+</array>
+</plist>

@@ -27,20 +27,18 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pushToDetailText:) name:YLWPushToDetailTextVCNotification object:nil];
     
-    
-    
     self.navigationItem.leftBarButtonItem = nil;
     
     [self.navigationController.navigationBar setBarTintColor:[UIColor orangeColor]];
     [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,[UIFont boldSystemFontOfSize:20.0f],NSFontAttributeName, nil]];
     
-    
-    self.titleModelArray = [YLWTitleModel titleModelGetModelArrayWith:@"titleArray.plist"];
+    if (self.dataSourceType == 0) {
+         self.titleModelArray = [YLWTitleModel titleModelGetModelArrayWith:@"titleArray.plist"];
+    }else{
+        self.titleModelArray = [YLWTitleModel titleModelGetModelArrayWith:@"storeInforArray.plist"];
+    }
     
     [self setUI];
-    
-    
-    
 }
 
 -(void)dealloc{
