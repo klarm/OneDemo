@@ -33,6 +33,7 @@
     [self addChildViewController:site WithTitle:@"主页" image:@"tab_site"];
 
     YLWHomeViewController *homeVc = [[YLWHomeViewController alloc]init];
+    homeVc.dataCatoryType = 0;
     [self addChildViewController:homeVc WithTitle:@"监测" image:@"tab_home"];
         
     YLWTopicViewController *topic = [[YLWTopicViewController alloc]init];

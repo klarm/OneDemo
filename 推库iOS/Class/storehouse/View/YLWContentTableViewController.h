@@ -11,6 +11,10 @@
 
 @interface YLWContentTableViewController : UITableViewController
 
+@property (nonatomic,assign) NSInteger myIndex;
+
+@property (nonatomic,assign) NSInteger dataCatoryType;
+
 @property (nonatomic,copy) NSString *urlstring;
 
 @property (nonatomic,copy) NSString *titlename;

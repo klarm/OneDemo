@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface YLWContentCollectionView : UICollectionView
-
+@property (nonatomic, assign)NSInteger index;
 @end

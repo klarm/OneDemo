@@ -9,5 +9,4 @@
 
 #import "YLWBasesHomeViewController.h"
 @interface YLWHomeViewController : YLWBasesHomeViewController
-@property (nonatomic, assign)NSInteger dataSourceType; //0监控 1主页
 @end

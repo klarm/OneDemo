@@ -9,6 +9,7 @@
 #import "YLWContentTableViewController.h"
 #import "YLWArticleModel.h"
 #import "YLWStoreMonitorCell.h"
+#import "storeInfoCell.h"
 #import "YLWDetailTextViewController.h"
 #import <Masonry.h>
 @interface YLWContentTableViewController ()
@@ -81,7 +82,6 @@
     return 2;
 }
 
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     if (section == 0) {
@@ -96,49 +96,93 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    if (indexPath.section == 0) {
-         YLWStoreMonitorSearchCell *cell = [tableView dequeueReusableCellWithIdentifier:@"YLWStoreMonitorSearchCell"];
-        
-        if (!cell) {
-            cell = [[YLWStoreMonitorSearchCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"YLWStoreMonitorSearchCell"];
+    if (self.dataCatoryType == 1) {
+        //主页二级页
+        if (_myIndex == 0) {
+            
+            storeInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:@"storeInfoCell"];
+            
+            if (!cell) {
+                cell = [[storeInfoCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"storeInfoCell"];
+            }
+            
+            [cell setCellImage:[UIImage imageNamed:@"storeInfo0.jpg"]];
+        }else if (_myIndex == 1){
+            
+            storeInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:@"storeInfoCell"];
+            
+            if (!cell) {
+                cell = [[storeInfoCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"storeInfoCell"];
+            }
+
+            [cell setCellImage:[UIImage imageNamed:@"storeInfo1.jpg"]];
+
+        }else  if (_myIndex == 2){
+            
+            storeInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:@"storeInfoCell"];
+            
+            if (!cell) {
+                cell = [[storeInfoCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"storeInfoCell"];
+            }
+            
+            [cell setCellImage:[UIImage imageNamed:@"storeInfo2.jpg"]];
+            
+        }else{
+            
+            storeInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:@"storeInfoCell"];
+            
+            if (!cell) {
+                cell = [[storeInfoCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"storeInfoCell"];
+            }
+            
+            [cell setCellImage:[UIImage imageNamed:@"storeInfo3.jpg"]];
+            
         }
-        
-        return cell;
-    }
-    
-    if (indexPath.section == 1) {
-        if (self.type == 0) {
-            YLWStoreMonitorCell0 *cell = [tableView dequeueReusableCellWithIdentifier:@"YLWStoreMonitorCell0"];
+    }else{
+        if (indexPath.section == 0) {
+            YLWStoreMonitorSearchCell *cell = [tableView dequeueReusableCellWithIdentifier:@"YLWStoreMonitorSearchCell"];
             
             if (!cell) {
-                cell = [[YLWStoreMonitorCell0 alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"YLWStoreMonitorCell0"];
+                cell = [[YLWStoreMonitorSearchCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"YLWStoreMonitorSearchCell"];
             }
-            
-            NSDictionary* dic = nil;
-            if (indexPath.row < _cellModelArray.count) {
-                dic = _cellModelArray[indexPath.row];
-            }
-            
-            [cell setCellData:dic];
-            
-             return cell;
-
-        }else if (self.type == 1){
-            YLWStoreMonitorCell1 *cell = [tableView dequeueReusableCellWithIdentifier:@"YLWStoreMonitorCell1"];
-            
-            if (!cell) {
-                cell = [[YLWStoreMonitorCell1 alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"YLWStoreMonitorCell1"];
-            }
-            
-            NSDictionary* dic = nil;
-            if (indexPath.row < _cellModelArray.count) {
-                dic = _cellModelArray[indexPath.row];
-            }
-            
-            [cell setCellData:dic];
-
             
             return cell;
+        }
+        
+        if (indexPath.section == 1) {
+            if (self.type == 0) {
+                YLWStoreMonitorCell0 *cell = [tableView dequeueReusableCellWithIdentifier:@"YLWStoreMonitorCell0"];
+                
+                if (!cell) {
+                    cell = [[YLWStoreMonitorCell0 alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"YLWStoreMonitorCell0"];
+                }
+                
+                NSDictionary* dic = nil;
+                if (indexPath.row < _cellModelArray.count) {
+                    dic = _cellModelArray[indexPath.row];
+                }
+                
+                [cell setCellData:dic];
+                
+                return cell;
+                
+            }else if (self.type == 1){
+                YLWStoreMonitorCell1 *cell = [tableView dequeueReusableCellWithIdentifier:@"YLWStoreMonitorCell1"];
+                
+                if (!cell) {
+                    cell = [[YLWStoreMonitorCell1 alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"YLWStoreMonitorCell1"];
+                }
+                
+                NSDictionary* dic = nil;
+                if (indexPath.row < _cellModelArray.count) {
+                    dic = _cellModelArray[indexPath.row];
+                }
+                
+                [cell setCellData:dic];
+                
+                
+                return cell;
+            }
         }
     }
     

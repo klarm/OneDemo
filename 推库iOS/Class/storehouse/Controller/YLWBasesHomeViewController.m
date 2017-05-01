@@ -8,8 +8,6 @@
 
 #import "YLWBasesHomeViewController.h"
 
-
-
 #define contentIdentifier @"contentCollectionViewIdentifier"
 @interface YLWBasesHomeViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,YLWTitleScrollViewDelegate>
 @end
@@ -99,7 +97,17 @@
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
+    NSInteger index = 0;
+    if ([collectionView isKindOfClass:[YLWContentCollectionView class]]) {
+        YLWContentCollectionView* cvc = collectionView;
+        index = cvc.index;
+    }
+    
     YLWCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[NSString stringWithFormat:@"%@%d",contentIdentifier,(int)indexPath.row] forIndexPath:indexPath];
+    
+    cell.dataCatoryType = self.dataCatoryType;
+    
+    cell.myIndex = index;
     
     if (indexPath.row % 2 == 0) {
         cell.backgroundColor = [UIColor yellowColor];
@@ -112,11 +120,10 @@
     cell.urlstring = model.urlstring;
     cell.title = model.title;
     
+    
     NSLog(@"%@",model.urlstring);
     
-    return cell;
-    
-    
+    return cell;    
 }
 
 #pragma mark - titleScrollViewDelegate的代理方法
@@ -128,6 +135,9 @@
     lastlabel.textColor = [UIColor blackColor];
     titleLabel.textColor = [UIColor colorWithRed:22.0/255.0 green:147.0/255.0 blue:114.0/255.0 alpha:1.0];
     self.lastIndex = i;
+    
+    self.contentCollectionView.index = i;
+    
     [self.contentCollectionView setContentOffset:CGPointMake(i *YLWScreenWidth, 0) animated:NO];
     
 }

@@ -32,7 +32,7 @@
     [self.navigationController.navigationBar setBarTintColor:[UIColor orangeColor]];
     [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,[UIFont boldSystemFontOfSize:20.0f],NSFontAttributeName, nil]];
     
-    if (self.dataSourceType == 0) {
+    if (self.dataCatoryType == 0) {
          self.titleModelArray = [YLWTitleModel titleModelGetModelArrayWith:@"titleArray.plist"];
     }else{
         self.titleModelArray = [YLWTitleModel titleModelGetModelArrayWith:@"storeInforArray.plist"];

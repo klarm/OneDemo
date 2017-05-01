@@ -17,6 +17,8 @@
 
 @interface YLWBasesHomeViewController : UIViewController
 
+@property (nonatomic, assign)NSInteger dataCatoryType; //0监控 1主页
+
 @property (nonatomic,strong) NSArray *titleModelArray;
 
 @property (nonatomic,strong) YLWTitleScrollView *titleScrollView;

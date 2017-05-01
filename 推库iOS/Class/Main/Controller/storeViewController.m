@@ -148,7 +148,7 @@ NSString * const strMyMainPage = @"主页";
     NSLog(@"选择%ld",indexPath.item);
     
     YLWHomeViewController* contentVc = [[YLWHomeViewController alloc]init];
-    contentVc.dataSourceType = 1;
+    contentVc.dataCatoryType = 1;
     
     [self.navigationController pushViewController:contentVc animated:YES];
 

@@ -10,6 +10,10 @@
 
 @interface YLWCollectionViewCell : UICollectionViewCell
 
+@property (nonatomic,assign) NSInteger myIndex;
+
+@property (nonatomic,assign) NSInteger dataCatoryType;
+
 @property (nonatomic,strong) NSString *urlstring;
 
 @property (nonatomic,copy) NSString *title;

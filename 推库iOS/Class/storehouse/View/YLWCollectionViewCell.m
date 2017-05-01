@@ -34,9 +34,6 @@
 -(void)setUrlstring:(NSString *)urlstring{
 
     _urlstring = urlstring;
-
-    
-
 }
 
 -(void)setTitle:(NSString *)title{
@@ -44,6 +41,10 @@
     _title = title;
     self.ContentTableViewController.titlename = title;
     self.ContentTableViewController.urlstring = _urlstring;
+    
+    self.ContentTableViewController.dataCatoryType = self.dataCatoryType;
+    
+    self.ContentTableViewController.myIndex = self.myIndex;
     
     self.ContentTableViewController.tableView.frame = self.bounds;
     [self.contentView addSubview:self.ContentTableViewController.tableView];
