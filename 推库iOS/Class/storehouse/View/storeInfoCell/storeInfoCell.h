@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface storeInfoCell : UITableViewCell
-- (void)setCellData:(NSDictionary*)dic;
 - (void)setCellImage:(UIImage*)img;
 @end
 

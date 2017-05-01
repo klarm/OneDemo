@@ -296,11 +296,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x63a8;&#x5e93;iOS/Class/storehouse/View/YLWContentTableViewController.m"
-            timestampString = "515335584.778335"
+            timestampString = "515336462.067657"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
+            startingLineNumber = "214"
+            endingLineNumber = "214"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "7">
             <Locations>
@@ -312,12 +312,12 @@
                   moduleName = "iOSDemo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/xionghao/Downloads/OneDemo/%E6%8E%A8%E5%BA%93iOS/Class/storehouse/View/YLWContentTableViewController.m"
-                  timestampString = "515335585.912214"
+                  timestampString = "515336693.740697"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "189"
-                  endingLineNumber = "189"
-                  offsetFromSymbolStart = "2421">
+                  startingLineNumber = "214"
+                  endingLineNumber = "214"
+                  offsetFromSymbolStart = "2503">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -327,12 +327,12 @@
                   moduleName = "iOSDemo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/xionghao/Downloads/OneDemo/%E6%8E%A8%E5%BA%93iOS/Class/storehouse/View/YLWContentTableViewController.m"
-                  timestampString = "515335585.915014"
+                  timestampString = "515336693.742582"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "189"
-                  endingLineNumber = "189"
-                  offsetFromSymbolStart = "2433">
+                  startingLineNumber = "214"
+                  endingLineNumber = "214"
+                  offsetFromSymbolStart = "2515">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -542,38 +542,6 @@
             startingLineNumber = "108"
             endingLineNumber = "108"
             landmarkName = "-collectionView:cellForItemAtIndexPath:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "&#x63a8;&#x5e93;iOS/Class/storehouse/View/storeInfoCell/storeInfoCell.m"
-            timestampString = "515335517.844339"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "-setCellImage:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "&#x63a8;&#x5e93;iOS/Class/storehouse/View/storeInfoCell/storeInfoCell.m"
-            timestampString = "515335518.772628"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "-setCellImage:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

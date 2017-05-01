@@ -79,20 +79,37 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 2;
+    if (self.dataCatoryType == 1) {
+        return 1;
+    }
+    else{
+        return 2;
+    }
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    if (section == 0) {
+    if (self.dataCatoryType == 1) {
         return 1;
-    }else{
-        return _cellModelArray.count;
+     }
+    else{
+        if (section == 0) {
+            return 1;
+        }else{
+            return _cellModelArray.count;
+        }
     }
-    
-    return 1;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+     if (self.dataCatoryType == 1) {
+         return self.tableView.frame.size.height;
+     }
+     else{
+         return 73;
+     }
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -107,6 +124,8 @@
             }
             
             [cell setCellImage:[UIImage imageNamed:@"storeInfo0.jpg"]];
+            
+            return cell;
         }else if (_myIndex == 1){
             
             storeInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:@"storeInfoCell"];
@@ -116,7 +135,9 @@
             }
 
             [cell setCellImage:[UIImage imageNamed:@"storeInfo1.jpg"]];
-
+            
+            return cell;
+            
         }else  if (_myIndex == 2){
             
             storeInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:@"storeInfoCell"];
@@ -127,6 +148,8 @@
             
             [cell setCellImage:[UIImage imageNamed:@"storeInfo2.jpg"]];
             
+            return cell;
+            
         }else{
             
             storeInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:@"storeInfoCell"];
@@ -136,6 +159,8 @@
             }
             
             [cell setCellImage:[UIImage imageNamed:@"storeInfo3.jpg"]];
+            
+            return cell;
             
         }
     }else{
