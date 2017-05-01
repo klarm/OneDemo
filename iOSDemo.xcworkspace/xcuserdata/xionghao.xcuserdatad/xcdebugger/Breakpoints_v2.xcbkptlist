@@ -168,11 +168,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x63a8;&#x5e93;iOS/Class/storehouse/Controller/YLWHomeViewController.m"
-            timestampString = "515152053.733007"
+            timestampString = "515324946.914303"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
@@ -248,11 +248,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x63a8;&#x5e93;iOS/Class/storehouse/Controller/YLWHomeViewController.m"
-            timestampString = "515156163.665362"
+            timestampString = "515324946.914303"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "-setNav"
             landmarkType = "7">
          </BreakpointContent>
@@ -264,11 +264,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x63a8;&#x5e93;iOS/Class/storehouse/Controller/YLWHomeViewController.m"
-            timestampString = "515156166.313266"
+            timestampString = "515324946.914303"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "-searchBtn"
             landmarkType = "7">
          </BreakpointContent>
@@ -360,11 +360,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x63a8;&#x5e93;iOS/Class/storehouse/View/YLWContentTableViewController.m"
-            timestampString = "515163225.242156"
+            timestampString = "515324782.952585"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "7">
             <Locations>
@@ -376,11 +376,11 @@
                   moduleName = "iOSDemo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/xionghao/Downloads/OneDemo/%E6%8E%A8%E5%BA%93iOS/Class/storehouse/View/YLWContentTableViewController.m"
-                  timestampString = "515295349.265122"
+                  timestampString = "515325046.091262"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "139"
-                  endingLineNumber = "139"
+                  startingLineNumber = "145"
+                  endingLineNumber = "145"
                   offsetFromSymbolStart = "1218">
                </Location>
                <Location
@@ -391,11 +391,11 @@
                   moduleName = "iOSDemo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/xionghao/Downloads/OneDemo/%E6%8E%A8%E5%BA%93iOS/Class/storehouse/View/YLWContentTableViewController.m"
-                  timestampString = "515295349.268291"
+                  timestampString = "515325046.094034"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "139"
-                  endingLineNumber = "139"
+                  startingLineNumber = "145"
+                  endingLineNumber = "145"
                   offsetFromSymbolStart = "1230">
                </Location>
             </Locations>
@@ -542,6 +542,38 @@
             startingLineNumber = "147"
             endingLineNumber = "147"
             landmarkName = "-collectionView:didSelectItemAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x63a8;&#x5e93;iOS/Class/storehouse/Controller/YLWHomeViewController.m"
+            timestampString = "515325033.251212"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "-pushToDetailText:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x63a8;&#x5e93;iOS/Class/storehouse/Controller/YLWHomeViewController.m"
+            timestampString = "515325037.531066"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
