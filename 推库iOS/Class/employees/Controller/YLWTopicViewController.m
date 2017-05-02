@@ -62,7 +62,7 @@ NSString * const strTiming = @"考勤";
         _headerView = [[UIView alloc]init];
         _headerView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 44);
         
-        _headerView.backgroundColor = [UIColor lightGrayColor];
+        _headerView.backgroundColor = [UIColor colorWithRed:221 green:221 blue:221 alpha:1];
         
         CGFloat perw = ([UIScreen mainScreen].bounds.size.width) / 5.0;
         

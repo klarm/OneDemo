@@ -20,12 +20,10 @@ Custom collection view cell for image and its label.
         [self addSubview:self.imgView];
         
         self.title = [[UILabel alloc]initWithFrame:CGRectMake(5, CGRectGetMaxY(self.imgView.frame)+5, CGRectGetWidth(self.frame)-10, 20)];
-        self.title.backgroundColor = [UIColor brownColor];
         self.title.textAlignment = NSTextAlignmentCenter;
         [self addSubview:self.title];
         
         self.subTitle = [[UILabel alloc]initWithFrame:CGRectMake(5, CGRectGetMaxY(self.title.frame)+5, CGRectGetWidth(self.frame)-10, 20)];
-        self.subTitle.backgroundColor = [UIColor brownColor];
         self.subTitle.textAlignment = NSTextAlignmentCenter;
         [self addSubview:self.subTitle];
     }

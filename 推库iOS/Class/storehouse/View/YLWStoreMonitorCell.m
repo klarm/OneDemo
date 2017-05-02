@@ -47,11 +47,11 @@
         [self.subContentView addSubview:_temAvg];
         [self.subContentView addSubview:_status];
         
-        _subContentView.backgroundColor = [UIColor lightGrayColor];
+        _subContentView.backgroundColor = [UIColor colorWithRed:242 green:242 blue:242 alpha:0.9];
         _subContentView.clipsToBounds = YES;
         
-        _ID.backgroundColor = [UIColor orangeColor];
-        _ID.textColor = [UIColor whiteColor];
+        //_ID.backgroundColor = [UIColor orangeColor];
+        //_ID.textColor = [UIColor whiteColor];
     }
 
     return self;
@@ -152,11 +152,12 @@
         [self.subContentView addSubview:_endTime];
         [self.subContentView addSubview:_status];
         
-        _subContentView.backgroundColor = [UIColor lightGrayColor];
+        _subContentView.backgroundColor = [UIColor colorWithRed:242 green:242 blue:242 alpha:0.9];
+
         _subContentView.clipsToBounds = YES;
         
-        _ID.backgroundColor = [UIColor orangeColor];
-        _ID.textColor = [UIColor whiteColor];
+        //_ID.backgroundColor = [UIColor orangeColor];
+        //_ID.textColor = [UIColor whiteColor];
     }
     
     return self;

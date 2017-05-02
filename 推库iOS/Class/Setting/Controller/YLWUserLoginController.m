@@ -89,11 +89,21 @@
         
         _emailTextField = [[UITextField alloc]initWithFrame:CGRectMake(0, 200, 200, 40)];
         _emailTextField.backgroundColor = [UIColor whiteColor];
-        _emailTextField.placeholder = @"用户名：";
+        //_emailTextField.placeholder = @"username";
+            _emailTextField.contentVerticalAlignment= UIControlContentVerticalAlignmentCenter;
+        _emailTextField.text = @"username";
+
         
         _passWordTextField = [[UITextField alloc]initWithFrame:CGRectMake(0, _emailTextField.bottom+20, 200, 40)];
         _passWordTextField.backgroundColor = [UIColor whiteColor];
-         _passWordTextField.placeholder = @"密码：";
+        //_passWordTextField.placeholder = @"123456";
+        _passWordTextField.secureTextEntry = YES;
+        _passWordTextField.text = @"123456";
+
+        
+        _passWordTextField.contentVerticalAlignment= UIControlContentVerticalAlignmentCenter;
+
+        
 
         [_emailTextField setCenterX:self.view.width/2.0];
         [_passWordTextField setCenterX:self.view.width/2.0];
