@@ -48,6 +48,8 @@
         self.timing = [[UILabel alloc]initWithFrame:CGRectZero];
         [self.contentView addSubview:self.timing];
         self.timing.textAlignment = NSTextAlignmentCenter;
+        
+        self.contentView.backgroundColor = [UIColor colorWithRed:242/255.0  green:242/255.0  blue:242/255.0  alpha:0.9];
     }
     return self;
 }

@@ -133,7 +133,7 @@
     NSInteger i = titleLabel.tag;
     UILabel *lastlabel = self.titleScrollView.subviews[self.lastIndex];
     lastlabel.textColor = [UIColor blackColor];
-    titleLabel.textColor = [UIColor colorWithRed:22.0/255.0 green:147.0/255.0 blue:114.0/255.0 alpha:1.0];
+    titleLabel.textColor = [UIColor orangeColor];
     self.lastIndex = i;
     
     self.contentCollectionView.index = i;
@@ -158,7 +158,9 @@
     UILabel *lastlabel = self.titleScrollView.subviews[self.lastIndex];
     lastlabel.textColor = [UIColor blackColor];
     UILabel *titlelabel = self.titleScrollView.subviews[currentIndex];
-    titlelabel.textColor = [UIColor colorWithRed:22.0/255.0 green:147.0/255.0 blue:114.0/255.0 alpha:1.0];
+    //titlelabel.textColor = [UIColor colorWithRed:22.0/255.0 green:147.0/255.0 blue:114.0/255.0 alpha:1.0];
+    titlelabel.textColor = [UIColor orangeColor];
+    
     self.lastIndex = currentIndex;
     //选中的label居中
     CGFloat needscrollX = titlelabel.center.x - self.titleScrollView.bounds.size.width*0.5;

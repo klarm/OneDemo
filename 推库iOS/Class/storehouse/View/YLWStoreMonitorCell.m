@@ -47,7 +47,7 @@
         [self.subContentView addSubview:_temAvg];
         [self.subContentView addSubview:_status];
         
-        _subContentView.backgroundColor = [UIColor colorWithRed:242 green:242 blue:242 alpha:0.9];
+        _subContentView.backgroundColor = [UIColor colorWithRed:242 /255.0 green:242/255.0  blue:242/255.0  alpha:0.9];
         _subContentView.clipsToBounds = YES;
         
         //_ID.backgroundColor = [UIColor orangeColor];
@@ -152,7 +152,7 @@
         [self.subContentView addSubview:_endTime];
         [self.subContentView addSubview:_status];
         
-        _subContentView.backgroundColor = [UIColor colorWithRed:242 green:242 blue:242 alpha:0.9];
+        _subContentView.backgroundColor = [UIColor colorWithRed:242/255.0  green:242/255.0  blue:242/255.0  alpha:0.9];
 
         _subContentView.clipsToBounds = YES;
         

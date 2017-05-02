@@ -38,6 +38,8 @@ NSString * const strTiming = @"考勤";
     
     
      self.tableView.rowHeight = 50;
+    
+    //self.tableView.separatorStyle=UITableViewCellSeparatorStyleSingleLine;
 }
 
 #pragma mark - 获取数据

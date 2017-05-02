@@ -39,9 +39,9 @@
 //    
 //    [UITabBar appearance].tintColor = [UIColor orangeColor];
 //    
-//    [UINavigationBar appearance].tintColor = [UIColor whiteColor];
+    [UINavigationBar appearance].tintColor = [UIColor whiteColor];
 //    
-//    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 //    
 //    if ([YLWUserLoginModel sharedUserLoginModel].isLogin) {
 //        NSLog(@"登录");
